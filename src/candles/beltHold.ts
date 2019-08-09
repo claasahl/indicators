@@ -31,6 +31,6 @@ export function isBeltHold(
   const bullish =
     up(trend) &&
     candle.open === candle.high &&
-    tail(candle) * ratio < body(candle);
+    tail(candle) < body(candle) * ratio;
   return bearish || bullish;
 }
