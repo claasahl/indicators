@@ -8,16 +8,24 @@ export interface Candle {
   close: number;
 }
 
+export function upper(candle: Candle): number {
+  return Math.max(candle.open, candle.close);
+}
+
+export function lower(candle: Candle): number {
+  return Math.min(candle.open, candle.close);
+}
+
 export function body(candle: Candle): number {
   return Math.abs(candle.open - candle.close);
 }
 
 export function hair(candle: Candle): number {
-  return candle.high - Math.max(candle.open, candle.close);
+  return candle.high - upper(candle);
 }
 
 export function tail(candle: Candle): number {
-  return Math.min(candle.open, candle.close) - candle.low;
+  return lower(candle) - candle.low;
 }
 
 export function bullish(candle: Candle): boolean {
