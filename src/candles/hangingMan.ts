@@ -4,6 +4,8 @@ import { Trend, up } from "../trend";
 /**
  * Tests whether the given candle matches the pattern: Hanging Man
  *
+ * ![sample](../media/candles/hangingMan.png)
+ *
  * ### Rules
  *
  * 1. The small real body is at the upper end of the trading range.

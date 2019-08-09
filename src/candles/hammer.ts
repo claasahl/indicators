@@ -4,6 +4,8 @@ import { Trend, down } from "../trend";
 /**
  * Tests whether the given candle matches the pattern: Hammer
  *
+ * ![sample](../media/candles/hammer.png)
+ *
  * ### Rules
  *
  * 1. The small real body is at the upper end of the trading range.

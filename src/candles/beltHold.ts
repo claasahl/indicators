@@ -4,6 +4,8 @@ import { Trend, down, up } from "../trend";
 /**
  * Tests whether the given candle matches the pattern: Belt Hold
  *
+ * ![sample](../media/candles/beltHold.png)
+ *
  * ### Rules
  *
  * 1. The Belt Hold line is identified by the lack of a shadow on one end.
