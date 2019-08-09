@@ -2,9 +2,20 @@ import { Candle, hair, body, tail } from "../candle";
 import { Trend, down, up } from "../trend";
 
 /**
+ * Tests whether the given candle matches the pattern: Belt Hold
+ *
+ * ### Rules
+ *
+ * 1. The Belt Hold line is identified by the lack of a shadow on one end.
+ * 1. The bullish white Belt Hold opens on its low and has no lower shadows.
+ * 1. The bearish black Belt Hold opens on its high and has no upper shadows.
+ *
+ * ### Remarks
+ * - Source: p.32
+ *
  * @param candle candle to be tested against this pattern
  * @param trend trend in which candle occured
- * @param ratio ratio between body and tail (default: 2)
+ * @param ratio ratio between body and tail
  */
 export function isBeltHold(
   candle: Candle,
