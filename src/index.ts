@@ -5,6 +5,7 @@ import { isHammer, isHangingMan, isBeltHold } from "./candles";
 export * from "./candle";
 export * from "./trend";
 export * from "./candles";
+export * from "./indicators";
 
 function drawCandles(candles: Candle[]): Buffer {
   const draw = require("draw-candlestick");
