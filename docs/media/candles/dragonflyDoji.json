@@ -1,0 +1,11 @@
+{
+  "trend": "up",
+  "candles": [
+    {
+      "open": 40,
+      "high": 40,
+      "low": 10,
+      "close": 40
+    }
+  ]
+}

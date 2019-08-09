@@ -347,6 +347,66 @@ typedoc.search.data = {
       classes:
         "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
       parent: '"samples"'
+    },
+    {
+      id: 43,
+      kind: 1,
+      name: '"candles/doji"',
+      url: "modules/_candles_doji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 44,
+      kind: 64,
+      name: "isDoji",
+      url: "modules/_candles_doji_.html#isdoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/doji"'
+    },
+    {
+      id: 45,
+      kind: 1,
+      name: '"candles/dragonflyDoji"',
+      url: "modules/_candles_dragonflydoji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 46,
+      kind: 64,
+      name: "isDragonflyDoji",
+      url: "modules/_candles_dragonflydoji_.html#isdragonflydoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/dragonflyDoji"'
+    },
+    {
+      id: 47,
+      kind: 1,
+      name: '"candles/gravestoneDoji"',
+      url: "modules/_candles_gravestonedoji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 48,
+      kind: 64,
+      name: "isGravestoneDoji",
+      url: "modules/_candles_gravestonedoji_.html#isgravestonedoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/gravestoneDoji"'
+    },
+    {
+      id: 49,
+      kind: 1,
+      name: '"candles/longLeggedDoji"',
+      url: "modules/_candles_longleggeddoji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 50,
+      kind: 64,
+      name: "isLongLeggedDoji",
+      url: "modules/_candles_longleggeddoji_.html#islongleggeddoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/longLeggedDoji"'
     }
   ]
 };
