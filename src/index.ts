@@ -1,6 +1,5 @@
 import { writeFileSync, readdirSync, readFileSync } from "fs";
 import { Candle } from "./candle";
-import { isHammer, isHangingMan, isBeltHold } from "./candles";
 
 export * from "./candle";
 export * from "./trend";
@@ -28,9 +27,6 @@ function generateSamples() {
     const sample = drawCandles(candles);
     const sampleFile = path + file.replace(".json", ".png");
     writeFileSync(sampleFile, sample);
-    console.log(file, "isHammer", isHammer(candles[0]));
-    console.log(file, "isHangingMan", isHangingMan(candles[0]));
-    console.log(file, "isBeltHold", isBeltHold(candles[0], "up"));
   });
 }
 generateSamples();
