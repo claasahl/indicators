@@ -1,6 +1,6 @@
 {
   "name": "indicators",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,20 @@
     "build": "tsc",
     "start": "ts-node src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "candlestick patterns",
+    "technical indicators"
+  ],
+  "author": {
+    "name": "Claas Ahlrichs",
+    "email": "claasahl@gmail.com",
+    "url": "https://github.com/claasahl"
+  },
+  "repository": "github:claasahl/indicators",
+  "bugs": {
+    "url": "https://github.com/claasahl/indicators/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "create-typescript-project-dependencies": "^10.0.4"
   }
