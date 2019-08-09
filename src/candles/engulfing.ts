@@ -10,7 +10,7 @@ import { Trend, up, down } from "../trend";
  *
  * ### Rules
  *
- * 1. a definite trend must be underway.
+ * 1. A definite trend must be underway.
  * 1. The second day's body must be completely engulfed by the prior day's body. This dies not mean, however, that either the top or bottom of the two bodies cannot be equal; it just means the both tops and both bottoms cannot be equal.
  * 1. The first day's color should reflect the trend; black for a downtrend and white for an uptrend.
  * 1. The second real body of the engulfing pattern should be the opposite color of the first real body.
@@ -27,11 +27,11 @@ export function isEngulfing(
   trend: Trend,
   offset: number = 0
 ) {
-  const first = candles[offset];
-  const second = candles[offset + 1];
-  const bull = up(trend) && bullish(first) && bearish(second);
-  const bear = down(trend) && bearish(first) && bullish(second);
-  return (bull || bear) && engulfed(first, second);
+  const short = candles[offset];
+  const long = candles[offset + 1];
+  const bull = up(trend) && bullish(short) && bearish(long);
+  const bear = down(trend) && bearish(short) && bullish(long);
+  return (bull || bear) && engulfed(short, long);
 }
 
 function engulfed(candleA: Candle, candleB: Candle): boolean {
