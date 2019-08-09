@@ -5,10 +5,11 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
+    "pretest": "npm run build",
     "test": "echo \"Error: no test specified\"",
     "precommit": "pretty-quick --staged",
-    "prepare": "tsc",
-    "build": "tsc",
+    "prepare": "npm run build",
+    "build": "tsc && typedoc",
     "start": "ts-node src/index.ts"
   },
   "keywords": [
@@ -26,6 +27,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "create-typescript-project-dependencies": "^10.0.4"
+    "create-typescript-project-dependencies": "^10.0.4",
+    "typedoc": "^0.15.0"
   }
 }
