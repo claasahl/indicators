@@ -4,7 +4,9 @@ import { Trend, down, up } from "../trend";
 /**
  * Tests whether the given candle matches the pattern: Belt Hold
  *
- * ![sample](../media/candles/beltHold.png)
+ * ![sample](../media/candles/beltHold_down.png)
+ *
+ * ![sample](../media/candles/beltHold_up.png)
  *
  * ### Rules
  *

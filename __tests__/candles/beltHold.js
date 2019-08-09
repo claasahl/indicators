@@ -3,8 +3,17 @@ const { readFileSync } = require("fs");
 const { isBeltHold: pattern } = require("../../build/candles/beltHold");
 
 describe("Belt Hold", () => {
-  test("valid JSON sample", () => {
-    const content = readFileSync("./assets/candles/beltHold.json").toString();
+  test("valid JSON sample (bearish trend)", () => {
+    const content = readFileSync(
+      "./assets/candles/beltHold_down.json"
+    ).toString();
+    const candles = JSON.parse(content);
+    expect(pattern(candles[0], "down")).toBe(true);
+  });
+  test("valid JSON sample (bullish trend)", () => {
+    const content = readFileSync(
+      "./assets/candles/beltHold_up.json"
+    ).toString();
     const candles = JSON.parse(content);
     expect(pattern(candles[0], "up")).toBe(true);
   });
