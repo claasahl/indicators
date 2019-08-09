@@ -7,15 +7,15 @@ describe("Belt Hold", () => {
     const content = readFileSync(
       "./assets/candles/beltHold_down.json"
     ).toString();
-    const candles = JSON.parse(content);
-    expect(pattern(candles[0], "down")).toBe(true);
+    const { candles, trend } = JSON.parse(content);
+    expect(pattern(candles[0], trend)).toBe(true);
   });
   test("valid JSON sample (bullish trend)", () => {
     const content = readFileSync(
       "./assets/candles/beltHold_up.json"
     ).toString();
-    const candles = JSON.parse(content);
-    expect(pattern(candles[0], "up")).toBe(true);
+    const { candles, trend } = JSON.parse(content);
+    expect(pattern(candles[0], trend)).toBe(true);
   });
   test("matching set of candles", () => {
     const candle = {

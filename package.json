@@ -28,9 +28,12 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/d3-scale": "^2.1.1",
+    "canvas": "^2.5.0",
     "create-typescript-project-dependencies": "^10.0.4",
-    "draw-candlestick": "^2.0.3",
+    "d3-scale": "^3.0.1",
     "jest": "^24.8.0",
     "typedoc": "^0.15.0"
-  }
+  },
+  "dependencies": {}
 }

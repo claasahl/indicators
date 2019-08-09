@@ -1,8 +1,11 @@
-[
-  {
-    "open": 50,
-    "high": 80,
-    "low": 5,
-    "close": 70
-  }
-]
+{
+  "trend": "up",
+  "candles": [
+    {
+      "open": 50,
+      "high": 80,
+      "low": 5,
+      "close": 70
+    }
+  ]
+}

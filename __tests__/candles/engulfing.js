@@ -7,15 +7,15 @@ describe("Engulfing", () => {
     const content = readFileSync(
       "./assets/candles/engulfing_down.json"
     ).toString();
-    const candles = JSON.parse(content);
-    expect(pattern(candles, "down")).toBe(true);
+    const { candles, trend } = JSON.parse(content);
+    expect(pattern(candles, trend)).toBe(true);
   });
   test("valid JSON sample (bullish trend)", () => {
     const content = readFileSync(
       "./assets/candles/engulfing_up.json"
     ).toString();
-    const candles = JSON.parse(content);
-    expect(pattern(candles, "up")).toBe(true);
+    const { candles, trend } = JSON.parse(content);
+    expect(pattern(candles, trend)).toBe(true);
   });
   test("matching set of candles", () => {
     const candles = [
