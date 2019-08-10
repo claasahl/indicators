@@ -638,6 +638,57 @@ typedoc.search.data = {
       classes:
         "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
       parent: '"samples"'
+    },
+    {
+      id: 80,
+      kind: 1,
+      name: '"candles/dojiStar"',
+      url: "modules/_candles_dojistar_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 81,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_dojistar_.options.html",
+      classes:
+        "tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"candles/dojiStar"'
+    },
+    {
+      id: 82,
+      kind: 1024,
+      name: "gap",
+      url: "interfaces/_candles_dojistar_.options.html#gap",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/dojiStar".Options'
+    },
+    {
+      id: 83,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_dojistar_.options.html#ratio",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/dojiStar".Options'
+    },
+    {
+      id: 84,
+      kind: 1024,
+      name: "precision",
+      url: "interfaces/_candles_dojistar_.options.html#precision",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/dojiStar".Options'
+    },
+    {
+      id: 85,
+      kind: 64,
+      name: "isDojiStar",
+      url: "modules/_candles_dojistar_.html#isdojistar",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/dojiStar"'
     }
   ]
 };

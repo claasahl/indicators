@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>&quot;candles/blackMarabozu&quot; | indicators</title>
+    <title>Options | indicators</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/main.css" />
@@ -78,32 +78,61 @@
               <a href="../globals.html">Globals</a>
             </li>
             <li>
-              <a href="_candles_blackmarabozu_.html"
-                >&quot;candles/blackMarabozu&quot;</a
+              <a href="../modules/_candles_dojistar_.html"
+                >&quot;candles/dojiStar&quot;</a
               >
             </li>
+            <li>
+              <a href="_candles_dojistar_.options.html">Options</a>
+            </li>
           </ul>
-          <h1>External module &quot;candles/blackMarabozu&quot;</h1>
+          <h1>Interface Options</h1>
         </div>
       </div>
     </header>
     <div class="container container-main">
       <div class="row">
         <div class="col-8 col-content">
+          <section class="tsd-panel tsd-hierarchy">
+            <h3>Hierarchy</h3>
+            <ul class="tsd-hierarchy">
+              <li>
+                <span class="target">Options</span>
+              </li>
+            </ul>
+          </section>
           <section class="tsd-panel-group tsd-index-group">
             <h2>Index</h2>
             <section class="tsd-panel tsd-index-panel">
               <div class="tsd-index-content">
-                <section class="tsd-index-section ">
-                  <h3>Functions</h3>
+                <section class="tsd-index-section tsd-is-not-exported">
+                  <h3>Properties</h3>
                   <ul class="tsd-index-list">
                     <li
-                      class="tsd-kind-function tsd-parent-kind-external-module"
+                      class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
                     >
                       <a
-                        href="_candles_blackmarabozu_.html#isblackmarabozu"
+                        href="_candles_dojistar_.options.html#gap"
                         class="tsd-kind-icon"
-                        >is<wbr />Black<wbr />Marabozu</a
+                        >gap</a
+                      >
+                    </li>
+                    <li
+                      class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+                    >
+                      <a
+                        href="_candles_dojistar_.options.html#precision"
+                        class="tsd-kind-icon"
+                        >precision</a
+                      >
+                    </li>
+                    <li
+                      class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+                    >
+                      <a
+                        href="_candles_dojistar_.options.html#ratio"
+                        class="tsd-kind-icon"
+                        >ratio</a
                       >
                     </li>
                   </ul>
@@ -111,155 +140,72 @@
               </div>
             </section>
           </section>
-          <section class="tsd-panel-group tsd-member-group ">
-            <h2>Functions</h2>
+          <section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+            <h2>Properties</h2>
             <section
-              class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module"
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
             >
-              <a name="isblackmarabozu" class="tsd-anchor"></a>
-              <h3>is<wbr />Black<wbr />Marabozu</h3>
-              <ul
-                class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module"
-              >
-                <li class="tsd-signature tsd-kind-icon">
-                  is<wbr />Black<wbr />Marabozu<span
-                    class="tsd-signature-symbol"
-                    >(</span
-                  >candles<span class="tsd-signature-symbol">: </span
-                  ><a
-                    href="../interfaces/_candle_.candle.html"
-                    class="tsd-signature-type"
-                    >Candle</a
-                  ><span class="tsd-signature-symbol">[]</span>, trend<span
-                    class="tsd-signature-symbol"
-                    >?: </span
-                  ><a href="_trend_.html#trend" class="tsd-signature-type"
-                    >Trend</a
-                  >, offset<span class="tsd-signature-symbol">?: </span
-                  ><span class="tsd-signature-type">number</span>,
-                  precision<span class="tsd-signature-symbol">?: </span
-                  ><span class="tsd-signature-type">number</span
-                  ><span class="tsd-signature-symbol">)</span
-                  ><span class="tsd-signature-symbol">: </span
-                  ><span class="tsd-signature-type">boolean</span>
-                </li>
-              </ul>
-              <ul class="tsd-descriptions">
-                <li class="tsd-description">
-                  <aside class="tsd-sources">
-                    <ul>
-                      <li>
-                        Defined in
-                        <a
-                          href="https://github.com/claasahl/indicators/blob/6a1f3a1/src/candles/blackMarabozu.ts#L25"
-                          >candles/blackMarabozu.ts:25</a
-                        >
-                      </li>
-                    </ul>
-                  </aside>
-                  <div class="tsd-comment tsd-typography">
-                    <div class="lead">
-                      <p>
-                        Tests whether the given candle matches the pattern:
-                        Black Marabozu
-                      </p>
-                    </div>
-                    <p>
-                      <img
-                        src="../media/candles/blackMarabozu.png"
-                        alt="sample"
-                      />
-                    </p>
-                    <a
-                      href="#rules"
-                      id="rules"
-                      style="color: inherit; text-decoration: none;"
-                    >
-                      <h3>Rules</h3>
-                    </a>
-                    <ol>
-                      <li>Virtually no upper shadow.</li>
-                      <li>Virtually no lower lower shadow.</li>
-                      <li>Candle is bearish.</li>
-                    </ol>
-                    <a
-                      href="#remarks"
-                      id="remarks"
-                      style="color: inherit; text-decoration: none;"
-                    >
-                      <h3>Remarks</h3>
-                    </a>
-                    <ul>
-                      <li>Source: p.14</li>
-                      <li>
-                        Opposite Pattern: White Marabozu (see
-                        <a href="_candles_whitemarabozu_.html#iswhitemarabozu"
-                          >isWhiteMarabozu</a
-                        >)
-                      </li>
-                    </ul>
-                  </div>
-                  <h4 class="tsd-parameters-title">Parameters</h4>
-                  <ul class="tsd-parameters">
-                    <li>
-                      <h5>
-                        candles:
-                        <a
-                          href="../interfaces/_candle_.candle.html"
-                          class="tsd-signature-type"
-                          >Candle</a
-                        ><span class="tsd-signature-symbol">[]</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>candles to be tested against this pattern</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        trend:
-                        <a href="_trend_.html#trend" class="tsd-signature-type"
-                          >Trend</a
-                        ><span class="tsd-signature-symbol">
-                          =&nbsp;&quot;down&quot;</span
-                        >
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>trend in which candle occured</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        offset: <span class="tsd-signature-type">number</span
-                        ><span class="tsd-signature-symbol"> =&nbsp;0</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>offset to earliest / first candle</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        precision: <span class="tsd-signature-type">number</span
-                        ><span class="tsd-signature-symbol"> =&nbsp;0</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>maximum allow size of upper/lower shadow</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <h4 class="tsd-returns-title">
-                    Returns <span class="tsd-signature-type">boolean</span>
-                  </h4>
-                </li>
-              </ul>
+              <a name="gap" class="tsd-anchor"></a>
+              <h3>gap</h3>
+              <div class="tsd-signature tsd-kind-icon">
+                gap<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>Defined in candles/dojiStar.ts:49</li>
+                </ul>
+              </aside>
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>Minimum gap between bodies of both candles</p>
+                </div>
+              </div>
+            </section>
+            <section
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+            >
+              <a name="precision" class="tsd-anchor"></a>
+              <h3>precision</h3>
+              <div class="tsd-signature tsd-kind-icon">
+                precision<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>Defined in candles/dojiStar.ts:57</li>
+                </ul>
+              </aside>
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>The star&#39;s maximum size of lower shadow</p>
+                </div>
+              </div>
+            </section>
+            <section
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+            >
+              <a name="ratio" class="tsd-anchor"></a>
+              <h3>ratio</h3>
+              <div class="tsd-signature tsd-kind-icon">
+                ratio<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>Defined in candles/dojiStar.ts:53</li>
+                </ul>
+              </aside>
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>
+                    Ratio between range of first candle and range of second
+                    candle. E.g. a ratio of 2 means that the range of the first
+                    candle needs to be at least twice as long as the rage of the
+                    second candle.
+                  </p>
+                </div>
+              </div>
             </section>
           </section>
         </div>
@@ -270,19 +216,58 @@
                 <a href="../globals.html"><em>Globals</em></a>
               </li>
               <li class="current tsd-kind-external-module">
-                <a href="_candles_blackmarabozu_.html"
-                  >"candles/black<wbr />Marabozu"</a
+                <a href="../modules/_candles_dojistar_.html"
+                  >"candles/doji<wbr />Star"</a
                 >
               </li>
             </ul>
           </nav>
           <nav class="tsd-navigation secondary menu-sticky">
-            <ul class="before-current">
+            <ul class="before-current"></ul>
+            <ul class="current">
+              <li
+                class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"
+              >
+                <a href="_candles_dojistar_.options.html" class="tsd-kind-icon"
+                  >Options</a
+                >
+                <ul>
+                  <li
+                    class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+                  >
+                    <a
+                      href="_candles_dojistar_.options.html#gap"
+                      class="tsd-kind-icon"
+                      >gap</a
+                    >
+                  </li>
+                  <li
+                    class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+                  >
+                    <a
+                      href="_candles_dojistar_.options.html#precision"
+                      class="tsd-kind-icon"
+                      >precision</a
+                    >
+                  </li>
+                  <li
+                    class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+                  >
+                    <a
+                      href="_candles_dojistar_.options.html#ratio"
+                      class="tsd-kind-icon"
+                      >ratio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="after-current">
               <li class=" tsd-kind-function tsd-parent-kind-external-module">
                 <a
-                  href="_candles_blackmarabozu_.html#isblackmarabozu"
+                  href="../modules/_candles_dojistar_.html#isdojistar"
                   class="tsd-kind-icon"
-                  >is<wbr />Black<wbr />Marabozu</a
+                  >is<wbr />Doji<wbr />Star</a
                 >
               </li>
             </ul>
