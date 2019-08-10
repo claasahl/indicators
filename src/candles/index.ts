@@ -15,3 +15,5 @@ export * from "./openingMarabozu";
 export * from "./closingMarabozu";
 export * from "./invertedHammer";
 export * from "./shootingStar";
+export * from "./piercingLine";
+export * from "./darkCloudCover";
