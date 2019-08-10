@@ -20,3 +20,4 @@ export * from "./piercingLine";
 export * from "./darkCloudCover";
 export * from "./longDay";
 export * from "./shortDay";
+export * from "./meetingLines";

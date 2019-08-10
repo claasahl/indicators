@@ -9,7 +9,8 @@
     "test": "jest",
     "precommit": "pretty-quick --staged",
     "prepare": "npm run build",
-    "build": "tsc && npm run samples && typedoc --media ./assets/",
+    "build": "tsc && npm run samples && npm run docs",
+    "docs": "typedoc --media ./assets/ --excludeNotExported",
     "samples": "ts-node src/samples.ts",
     "start": "ts-node src/index.ts"
   },
