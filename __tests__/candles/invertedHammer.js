@@ -1,8 +1,6 @@
 const { readFileSync } = require("fs");
 
-const {
-  isInvertedHammer: pattern
-} = require("../../build/candles/invertedHammer");
+const { isInvertedHammer: pattern } = require("../../build/candles");
 
 describe("Inverted Hammer", () => {
   test("valid JSON sample", () => {

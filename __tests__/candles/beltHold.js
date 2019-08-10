@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isBeltHold: pattern } = require("../../build/candles/beltHold");
+const { isBeltHold: pattern } = require("../../build/candles");
 
 describe("Belt Hold", () => {
   test("valid JSON sample (bearish trend)", () => {

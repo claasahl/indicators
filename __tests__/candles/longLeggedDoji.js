@@ -1,8 +1,6 @@
 const { readFileSync } = require("fs");
 
-const {
-  isLongLeggedDoji: pattern
-} = require("../../build/candles/longLeggedDoji");
+const { isLongLeggedDoji: pattern } = require("../../build/candles");
 
 describe("Long-Legged Doji", () => {
   test("valid JSON sample", () => {

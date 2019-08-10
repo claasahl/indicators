@@ -1,8 +1,6 @@
 const { readFileSync } = require("fs");
 
-const {
-  isGravestoneDoji: pattern
-} = require("../../build/candles/gravestoneDoji");
+const { isGravestoneDoji: pattern } = require("../../build/candles");
 
 describe("Gravestone Doji", () => {
   test("valid JSON sample", () => {

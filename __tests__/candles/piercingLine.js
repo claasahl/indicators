@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isPiercingLine: pattern } = require("../../build/candles/piercingLine");
+const { isPiercingLine: pattern } = require("../../build/candles");
 
 describe("Piercing Line", () => {
   test("valid JSON sample", () => {

@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isMarabozu: pattern } = require("../../build/candles/marabozu");
+const { isMarabozu: pattern } = require("../../build/candles");
 
 describe("Marabozu", () => {
   test("valid JSON sample", () => {

@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isEngulfing: pattern } = require("../../build/candles/engulfing");
+const { isEngulfing: pattern } = require("../../build/candles");
 
 describe("Engulfing", () => {
   test("valid JSON sample (bearish trend)", () => {
