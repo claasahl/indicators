@@ -263,19 +263,178 @@ typedoc.search.data = {
     {
       id: 32,
       kind: 1,
+      name: '"candles/doji"',
+      url: "modules/_candles_doji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 33,
+      kind: 64,
+      name: "isDoji",
+      url: "modules/_candles_doji_.html#isdoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/doji"'
+    },
+    {
+      id: 34,
+      kind: 1,
+      name: '"candles/haramiCross"',
+      url: "modules/_candles_haramicross_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 35,
+      kind: 64,
+      name: "isHaramiCross",
+      url: "modules/_candles_haramicross_.html#isharamicross",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/haramiCross"'
+    },
+    {
+      id: 36,
+      kind: 64,
+      name: "engulfed",
+      url: "modules/_candles_haramicross_.html#engulfed",
+      classes:
+        "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"candles/haramiCross"'
+    },
+    {
+      id: 37,
+      kind: 1,
+      name: '"candles/dragonflyDoji"',
+      url: "modules/_candles_dragonflydoji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 38,
+      kind: 64,
+      name: "isDragonflyDoji",
+      url: "modules/_candles_dragonflydoji_.html#isdragonflydoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/dragonflyDoji"'
+    },
+    {
+      id: 39,
+      kind: 1,
+      name: '"candles/gravestoneDoji"',
+      url: "modules/_candles_gravestonedoji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 40,
+      kind: 64,
+      name: "isGravestoneDoji",
+      url: "modules/_candles_gravestonedoji_.html#isgravestonedoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/gravestoneDoji"'
+    },
+    {
+      id: 41,
+      kind: 1,
+      name: '"candles/longLeggedDoji"',
+      url: "modules/_candles_longleggeddoji_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 42,
+      kind: 64,
+      name: "isLongLeggedDoji",
+      url: "modules/_candles_longleggeddoji_.html#islongleggeddoji",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/longLeggedDoji"'
+    },
+    {
+      id: 43,
+      kind: 1,
+      name: '"candles/marabozu"',
+      url: "modules/_candles_marabozu_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 44,
+      kind: 64,
+      name: "isMarabozu",
+      url: "modules/_candles_marabozu_.html#ismarabozu",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/marabozu"'
+    },
+    {
+      id: 45,
+      kind: 1,
+      name: '"candles/blackMarabozu"',
+      url: "modules/_candles_blackmarabozu_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 46,
+      kind: 64,
+      name: "isBlackMarabozu",
+      url: "modules/_candles_blackmarabozu_.html#isblackmarabozu",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/blackMarabozu"'
+    },
+    {
+      id: 47,
+      kind: 1,
+      name: '"candles/whiteMarabozu"',
+      url: "modules/_candles_whitemarabozu_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 48,
+      kind: 64,
+      name: "isWhiteMarabozu",
+      url: "modules/_candles_whitemarabozu_.html#iswhitemarabozu",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/whiteMarabozu"'
+    },
+    {
+      id: 49,
+      kind: 1,
+      name: '"candles/openingMarabozu"',
+      url: "modules/_candles_openingmarabozu_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 50,
+      kind: 64,
+      name: "isOpeningMarabozu",
+      url: "modules/_candles_openingmarabozu_.html#isopeningmarabozu",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/openingMarabozu"'
+    },
+    {
+      id: 51,
+      kind: 1,
+      name: '"candles/closingMarabozu"',
+      url: "modules/_candles_closingmarabozu_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 52,
+      kind: 64,
+      name: "isClosingMarabozu",
+      url: "modules/_candles_closingmarabozu_.html#isclosingmarabozu",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/closingMarabozu"'
+    },
+    {
+      id: 53,
+      kind: 1,
       name: '"candles/index"',
       url: "modules/_candles_index_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 33,
+      id: 54,
       kind: 1,
       name: '"indicators/simpleMovingAverage"',
       url: "modules/_indicators_simplemovingaverage_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 34,
+      id: 55,
       kind: 64,
       name: "simpleMovingAverage",
       url: "modules/_indicators_simplemovingaverage_.html#simplemovingaverage",
@@ -283,28 +442,28 @@ typedoc.search.data = {
       parent: '"indicators/simpleMovingAverage"'
     },
     {
-      id: 35,
+      id: 56,
       kind: 1,
       name: '"indicators/index"',
       url: "modules/_indicators_index_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 36,
+      id: 57,
       kind: 1,
       name: '"index"',
       url: "modules/_index_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 37,
+      id: 58,
       kind: 1,
       name: '"samples"',
       url: "modules/_samples_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 38,
+      id: 59,
       kind: 256,
       name: "Sample",
       url: "interfaces/_samples_.sample.html",
@@ -313,7 +472,7 @@ typedoc.search.data = {
       parent: '"samples"'
     },
     {
-      id: 39,
+      id: 60,
       kind: 1024,
       name: "trend",
       url: "interfaces/_samples_.sample.html#trend",
@@ -322,7 +481,7 @@ typedoc.search.data = {
       parent: '"samples".Sample'
     },
     {
-      id: 40,
+      id: 61,
       kind: 1024,
       name: "candles",
       url: "interfaces/_samples_.sample.html#candles",
@@ -331,7 +490,7 @@ typedoc.search.data = {
       parent: '"samples".Sample'
     },
     {
-      id: 41,
+      id: 62,
       kind: 64,
       name: "drawCandles",
       url: "modules/_samples_.html#drawcandles",
@@ -340,73 +499,13 @@ typedoc.search.data = {
       parent: '"samples"'
     },
     {
-      id: 42,
+      id: 63,
       kind: 64,
       name: "generateSamples",
       url: "modules/_samples_.html#generatesamples",
       classes:
         "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
       parent: '"samples"'
-    },
-    {
-      id: 43,
-      kind: 1,
-      name: '"candles/doji"',
-      url: "modules/_candles_doji_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 44,
-      kind: 64,
-      name: "isDoji",
-      url: "modules/_candles_doji_.html#isdoji",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"candles/doji"'
-    },
-    {
-      id: 45,
-      kind: 1,
-      name: '"candles/dragonflyDoji"',
-      url: "modules/_candles_dragonflydoji_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 46,
-      kind: 64,
-      name: "isDragonflyDoji",
-      url: "modules/_candles_dragonflydoji_.html#isdragonflydoji",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"candles/dragonflyDoji"'
-    },
-    {
-      id: 47,
-      kind: 1,
-      name: '"candles/gravestoneDoji"',
-      url: "modules/_candles_gravestonedoji_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 48,
-      kind: 64,
-      name: "isGravestoneDoji",
-      url: "modules/_candles_gravestonedoji_.html#isgravestonedoji",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"candles/gravestoneDoji"'
-    },
-    {
-      id: 49,
-      kind: 1,
-      name: '"candles/longLeggedDoji"',
-      url: "modules/_candles_longleggeddoji_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 50,
-      kind: 64,
-      name: "isLongLeggedDoji",
-      url: "modules/_candles_longleggeddoji_.html#islongleggeddoji",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"candles/longLeggedDoji"'
     }
   ]
 };
