@@ -506,6 +506,108 @@ typedoc.search.data = {
       classes:
         "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
       parent: '"samples"'
+    },
+    {
+      id: 64,
+      kind: 1,
+      name: '"candles/invertedHammer"',
+      url: "modules/_candles_invertedhammer_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 65,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_invertedhammer_.options.html",
+      classes:
+        "tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"candles/invertedHammer"'
+    },
+    {
+      id: 66,
+      kind: 1024,
+      name: "gap",
+      url: "interfaces/_candles_invertedhammer_.options.html#gap",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/invertedHammer".Options'
+    },
+    {
+      id: 67,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_invertedhammer_.options.html#ratio",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/invertedHammer".Options'
+    },
+    {
+      id: 68,
+      kind: 1024,
+      name: "precision",
+      url: "interfaces/_candles_invertedhammer_.options.html#precision",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/invertedHammer".Options'
+    },
+    {
+      id: 69,
+      kind: 64,
+      name: "isInvertedHammer",
+      url: "modules/_candles_invertedhammer_.html#isinvertedhammer",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/invertedHammer"'
+    },
+    {
+      id: 70,
+      kind: 1,
+      name: '"candles/shootingStar"',
+      url: "modules/_candles_shootingstar_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 71,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_shootingstar_.options.html",
+      classes:
+        "tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"candles/shootingStar"'
+    },
+    {
+      id: 72,
+      kind: 1024,
+      name: "gap",
+      url: "interfaces/_candles_shootingstar_.options.html#gap",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/shootingStar".Options'
+    },
+    {
+      id: 73,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_shootingstar_.options.html#ratio",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/shootingStar".Options'
+    },
+    {
+      id: 74,
+      kind: 1024,
+      name: "precision",
+      url: "interfaces/_candles_shootingstar_.options.html#precision",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"candles/shootingStar".Options'
+    },
+    {
+      id: 75,
+      kind: 64,
+      name: "isShootingStar",
+      url: "modules/_candles_shootingstar_.html#isshootingstar",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/shootingStar"'
     }
   ]
 };
