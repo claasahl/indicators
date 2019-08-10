@@ -21,17 +21,19 @@ export namespace BlackMarabozu {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
-   * @param precision maximum allow size of upper/lower shadow
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     trend: Trend = "down",
     offset: number = 0,
-    precision: number = 0
+    options: Options = defaults
   ): boolean {
     return (
-      Marabozu.test(candles, trend, offset, precision) &&
-      bearish(candles[offset])
+      Marabozu.test(candles, trend, offset, options) && bearish(candles[offset])
     );
   }
+
+  export type Options = Marabozu.Options;
+  export const defaults: Options = Marabozu.defaults;
 }

@@ -18,16 +18,19 @@ export namespace DragonflyDoji {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
-   * @param precision maximum allowed difference between open and close prices
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     trend: Trend,
     offset: number = 0,
-    precision: number = 0
+    options: Options = defaults
   ) {
     const candle = candles[offset];
-    const doji = Doji.test(candles, trend, offset, precision);
+    const doji = Doji.test(candles, trend, offset, options);
     return doji && upper(candle) === candle.high;
   }
+
+  export type Options = Doji.Options;
+  export const defaults: Options = Doji.defaults;
 }

@@ -21,19 +21,19 @@ export namespace HaramiCross {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
-   * @param precision maximum allowed difference between open and close prices (Doji)
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     trend: Trend,
     offset: number = 0,
-    precision: number = 0
+    options: Options = defaults
   ) {
     const long = candles[offset];
     const short = candles[offset + 1];
     const bull = up(trend) && bullish(long);
     const bear = down(trend) && bearish(long);
-    const doji = Doji.test(candles, trend, offset + 1, precision);
+    const doji = Doji.test(candles, trend, offset + 1, options);
     return (bull || bear) && engulfed(short, long) && doji;
   }
 
@@ -47,4 +47,7 @@ export namespace HaramiCross {
       (upperA < upperB && lowerA >= lowerB)
     );
   }
+
+  export type Options = Doji.Options;
+  export const defaults: Options = Doji.defaults;
 }

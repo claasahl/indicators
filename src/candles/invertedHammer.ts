@@ -26,11 +26,7 @@ export namespace InvertedHammer {
     candles: Candle[],
     trend: Trend = "down",
     offset: number = 0,
-    options: Options = {
-      gap: 1,
-      ratio: 2,
-      precision: 0
-    }
+    options: Options = defaults
   ): boolean {
     const long = candles[offset];
     const star = candles[offset + 1];
@@ -44,7 +40,7 @@ export namespace InvertedHammer {
     );
   }
 
-  interface Options {
+  export interface Options {
     /**
      *  Minimum gap between bodies of both candles
      */
@@ -58,4 +54,9 @@ export namespace InvertedHammer {
      */
     precision: number;
   }
+  export const defaults: Options = {
+    gap: 1,
+    ratio: 2,
+    precision: 0
+  };
 }

@@ -25,7 +25,7 @@ export namespace ShortDay {
     candles: Candle[],
     _trend: Trend = "down",
     offset: number = 0,
-    options: Options = defaultOptions
+    options: Options = defaults
   ): boolean {
     if (
       offset - options.noOfCandles < 0 ||
@@ -53,5 +53,5 @@ export namespace ShortDay {
     ratio: number;
   }
 
-  export const defaultOptions: Options = { noOfCandles: 5, ratio: 2 };
+  export const defaults: Options = { noOfCandles: 5, ratio: 2 };
 }

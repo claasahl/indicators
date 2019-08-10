@@ -29,7 +29,7 @@ export namespace MeetingLines {
     candles: Candle[],
     trend: Trend,
     offset: number = 0,
-    options: MeetingLinesOptions = meetingLinesDefaults
+    options: Options = defaults
   ): boolean {
     const first = candles[offset];
     const second = candles[offset + 1];
@@ -52,15 +52,15 @@ export namespace MeetingLines {
     return false;
   }
 
-  export type MeetingLinesOptions = LongDay.Options & {
+  export type Options = LongDay.Options & {
     /**
      * The maximum distance between the closing prices.
      */
     precision: number;
   };
 
-  export const meetingLinesDefaults: MeetingLinesOptions = {
+  export const defaults: Options = {
     precision: 0,
-    ...LongDay.defaultOptions
+    ...LongDay.defaults
   };
 }

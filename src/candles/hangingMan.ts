@@ -20,14 +20,16 @@ export namespace HangingMan {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
+   * @param options configurable options for this pattern
    * @param ratio ratio between body and tail
    */
   export function test(
     candles: Candle[],
     trend: Trend = "up",
     offset: number = 0,
-    ratio: number = 2
+    options: Options = defaults
   ): boolean {
+    const { ratio } = options;
     const candle = candles[offset];
     return (
       up(trend) &&
@@ -35,4 +37,11 @@ export namespace HangingMan {
       hair(candle) < body(candle)
     );
   }
+
+  export interface Options {
+    ratio: number;
+  }
+  export const defaults: Options = {
+    ratio: 2
+  };
 }

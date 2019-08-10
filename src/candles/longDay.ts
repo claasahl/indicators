@@ -26,7 +26,7 @@ export namespace LongDay {
     candles: Candle[],
     _trend: Trend = "down",
     offset: number = 0,
-    options: Options = defaultOptions
+    options: Options = defaults
   ): boolean {
     if (
       offset - options.noOfCandles < 0 ||
@@ -40,12 +40,6 @@ export namespace LongDay {
     }
     const reference = sma(body(candles[offset - 1])) || Number.MAX_VALUE;
     const candle = candles[offset];
-    console.log(
-      body(candle),
-      reference,
-      options.ratio,
-      reference * options.ratio
-    );
     return body(candle) >= reference * options.ratio;
   }
 
@@ -60,5 +54,5 @@ export namespace LongDay {
     ratio: number;
   }
 
-  export const defaultOptions: Options = { noOfCandles: 5, ratio: 2 };
+  export const defaults: Options = { noOfCandles: 5, ratio: 2 };
 }

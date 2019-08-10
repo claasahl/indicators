@@ -16,14 +16,15 @@ export namespace OpeningMarabozu {
    * @param candles candles to be tested against this pattern
    * @param _trend trend in which candle occured
    * @param offset offset to earliest / first candle
-   * @param precision maximum allow size of upper/lower shadow
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     _trend: Trend,
     offset: number = 0,
-    precision: number = 0
+    options: Options = defaults
   ): boolean {
+    const { precision } = options;
     const candle = candles[offset];
     const { open, high, low } = candle;
     if (bullish(candle)) {
@@ -33,4 +34,14 @@ export namespace OpeningMarabozu {
     }
     return false;
   }
+
+  export interface Options {
+    /**
+     * maximum allow size of upper/lower shadow
+     */
+    precision: number;
+  }
+  export const defaults: Options = {
+    precision: 0
+  };
 }

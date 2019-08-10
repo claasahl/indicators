@@ -20,14 +20,15 @@ export namespace Hammer {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
-   * @param ratio ratio between body and tail
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     trend: Trend = "down",
     offset: number = 0,
-    ratio: number = 2
+    options: Options = defaults
   ): boolean {
+    const { ratio } = options;
     const candle = candles[offset];
     return (
       down(trend) &&
@@ -35,4 +36,14 @@ export namespace Hammer {
       hair(candle) < body(candle)
     );
   }
+
+  export interface Options {
+    /**
+     * ratio between body and tail
+     */
+    ratio: number;
+  }
+  export const defaults: Options = {
+    ratio: 2
+  };
 }

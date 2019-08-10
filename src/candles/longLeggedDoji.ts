@@ -18,18 +18,25 @@ export namespace LongLeggedDoji {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
-   * @param precision maximum allowed difference between open and close prices
-   * @param precision2 maximum allowed difference between hair and tail
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     trend: Trend,
     offset: number = 0,
-    precision: number = 0,
-    precision2: number = 0
+    options: Options = defaults
   ) {
+    const { precision2 } = options;
     const candle = candles[offset];
-    const doji = Doji.test(candles, trend, offset, precision);
+    const doji = Doji.test(candles, trend, offset, options);
     return doji && Math.abs(hair(candle) - tail(candle)) <= precision2;
   }
+
+  export type Options = Doji.Options & {
+    /**
+     * maximum allowed difference between hair and tail
+     */
+    precision2: number;
+  };
+  export const defaults: Options = { precision2: 0, ...Doji.defaults };
 }
