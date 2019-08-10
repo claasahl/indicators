@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sample | indicators</title>
+    <title>Options | indicators</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/main.css" />
@@ -58,10 +58,6 @@
                   <label class="tsd-widget" for="tsd-filter-externals"
                     >Externals</label
                   >
-                  <input type="checkbox" id="tsd-filter-only-exported" />
-                  <label class="tsd-widget" for="tsd-filter-only-exported"
-                    >Only exported</label
-                  >
                 </div>
               </div>
               <a href="#" class="tsd-widget menu no-caption" data-toggle="menu"
@@ -78,13 +74,23 @@
               <a href="../globals.html">Globals</a>
             </li>
             <li>
-              <a href="../modules/_samples_.html">&quot;samples&quot;</a>
+              <a href="../modules/_candles_closingmarabozu_.html"
+                >&quot;candles/closingMarabozu&quot;</a
+              >
             </li>
             <li>
-              <a href="_samples_.sample.html">Sample</a>
+              <a
+                href="../modules/_candles_closingmarabozu_.closingmarabozu.html"
+                >ClosingMarabozu</a
+              >
+            </li>
+            <li>
+              <a href="_candles_closingmarabozu_.closingmarabozu.options.html"
+                >Options</a
+              >
             </li>
           </ul>
-          <h1>Interface Sample</h1>
+          <h1>Interface Options</h1>
         </div>
       </div>
     </header>
@@ -95,7 +101,7 @@
             <h3>Hierarchy</h3>
             <ul class="tsd-hierarchy">
               <li>
-                <span class="target">Sample</span>
+                <span class="target">Options</span>
               </li>
             </ul>
           </section>
@@ -103,25 +109,14 @@
             <h2>Index</h2>
             <section class="tsd-panel tsd-index-panel">
               <div class="tsd-index-content">
-                <section class="tsd-index-section tsd-is-not-exported">
+                <section class="tsd-index-section ">
                   <h3>Properties</h3>
                   <ul class="tsd-index-list">
-                    <li
-                      class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
-                    >
+                    <li class="tsd-kind-property tsd-parent-kind-interface">
                       <a
-                        href="_samples_.sample.html#candles"
+                        href="_candles_closingmarabozu_.closingmarabozu.options.html#precision"
                         class="tsd-kind-icon"
-                        >candles</a
-                      >
-                    </li>
-                    <li
-                      class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
-                    >
-                      <a
-                        href="_samples_.sample.html#trend"
-                        class="tsd-kind-icon"
-                        >trend</a
+                        >precision</a
                       >
                     </li>
                   </ul>
@@ -129,55 +124,33 @@
               </div>
             </section>
           </section>
-          <section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+          <section class="tsd-panel-group tsd-member-group ">
             <h2>Properties</h2>
             <section
-              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a name="candles" class="tsd-anchor"></a>
-              <h3>candles</h3>
+              <a name="precision" class="tsd-anchor"></a>
+              <h3>precision</h3>
               <div class="tsd-signature tsd-kind-icon">
-                candles<span class="tsd-signature-symbol">:</span>
-                <a href="_candle_.candle.html" class="tsd-signature-type"
-                  >Candle</a
-                ><span class="tsd-signature-symbol">[]</span>
+                precision<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/claasahl/indicators/blob/6a1f3a1/src/samples.ts#L93"
-                      >samples.ts:93</a
+                      href="https://github.com/claasahl/indicators/blob/d5ac3ba/src/candles/closingMarabozu.ts#L42"
+                      >candles/closingMarabozu.ts:42</a
                     >
                   </li>
                 </ul>
               </aside>
-            </section>
-            <section
-              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
-            >
-              <a name="trend" class="tsd-anchor"></a>
-              <h3>trend</h3>
-              <div class="tsd-signature tsd-kind-icon">
-                trend<span class="tsd-signature-symbol">:</span>
-                <a
-                  href="../modules/_trend_.html#trend"
-                  class="tsd-signature-type"
-                  >Trend</a
-                >
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>maximum allow size of upper/lower shadow</p>
+                </div>
               </div>
-              <aside class="tsd-sources">
-                <ul>
-                  <li>
-                    Defined in
-                    <a
-                      href="https://github.com/claasahl/indicators/blob/6a1f3a1/src/samples.ts#L92"
-                      >samples.ts:92</a
-                    >
-                  </li>
-                </ul>
-              </aside>
             </section>
           </section>
         </div>
@@ -188,54 +161,55 @@
                 <a href="../globals.html"><em>Globals</em></a>
               </li>
               <li class="current tsd-kind-external-module">
-                <a href="../modules/_samples_.html">"samples"</a>
+                <a href="../modules/_candles_closingmarabozu_.html"
+                  >"candles/closing<wbr />Marabozu"</a
+                >
+                <ul>
+                  <li
+                    class="current tsd-kind-module tsd-parent-kind-external-module"
+                  >
+                    <a
+                      href="../modules/_candles_closingmarabozu_.closingmarabozu.html"
+                      >Closing<wbr />Marabozu</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
           <nav class="tsd-navigation secondary menu-sticky">
             <ul class="before-current"></ul>
             <ul class="current">
-              <li
-                class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"
-              >
-                <a href="_samples_.sample.html" class="tsd-kind-icon">Sample</a>
+              <li class="current tsd-kind-interface tsd-parent-kind-module">
+                <a
+                  href="_candles_closingmarabozu_.closingmarabozu.options.html"
+                  class="tsd-kind-icon"
+                  >Options</a
+                >
                 <ul>
-                  <li
-                    class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
-                  >
+                  <li class=" tsd-kind-property tsd-parent-kind-interface">
                     <a
-                      href="_samples_.sample.html#candles"
+                      href="_candles_closingmarabozu_.closingmarabozu.options.html#precision"
                       class="tsd-kind-icon"
-                      >candles</a
-                    >
-                  </li>
-                  <li
-                    class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"
-                  >
-                    <a href="_samples_.sample.html#trend" class="tsd-kind-icon"
-                      >trend</a
+                      >precision</a
                     >
                   </li>
                 </ul>
               </li>
             </ul>
             <ul class="after-current">
-              <li
-                class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"
-              >
+              <li class=" tsd-kind-function tsd-parent-kind-module">
                 <a
-                  href="../modules/_samples_.html#drawcandles"
+                  href="../modules/_candles_closingmarabozu_.closingmarabozu.html#test"
                   class="tsd-kind-icon"
-                  >draw<wbr />Candles</a
+                  >test</a
                 >
               </li>
-              <li
-                class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"
-              >
+              <li class=" tsd-kind-object-literal tsd-parent-kind-module">
                 <a
-                  href="../modules/_samples_.html#generatesamples"
+                  href="../modules/_candles_closingmarabozu_.closingmarabozu.html#defaults"
                   class="tsd-kind-icon"
-                  >generate<wbr />Samples</a
+                  >defaults</a
                 >
               </li>
             </ul>

@@ -58,10 +58,6 @@
                   <label class="tsd-widget" for="tsd-filter-externals"
                     >Externals</label
                   >
-                  <input type="checkbox" id="tsd-filter-only-exported" />
-                  <label class="tsd-widget" for="tsd-filter-only-exported"
-                    >Only exported</label
-                  >
                 </div>
               </div>
               <a href="#" class="tsd-widget menu no-caption" data-toggle="menu"
@@ -94,202 +90,19 @@
             <h2>Index</h2>
             <section class="tsd-panel tsd-index-panel">
               <div class="tsd-index-content">
-                <section class="tsd-index-section tsd-is-not-exported">
-                  <h3>Interfaces</h3>
-                  <ul class="tsd-index-list">
-                    <li
-                      class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"
-                    >
-                      <a
-                        href="../interfaces/_candles_shootingstar_.options.html"
-                        class="tsd-kind-icon"
-                        >Options</a
-                      >
-                    </li>
-                  </ul>
-                </section>
                 <section class="tsd-index-section ">
-                  <h3>Functions</h3>
+                  <h3>Modules</h3>
                   <ul class="tsd-index-list">
-                    <li
-                      class="tsd-kind-function tsd-parent-kind-external-module"
-                    >
+                    <li class="tsd-kind-module tsd-parent-kind-external-module">
                       <a
-                        href="_candles_shootingstar_.html#isshootingstar"
+                        href="_candles_shootingstar_.shootingstar.html"
                         class="tsd-kind-icon"
-                        >is<wbr />Shooting<wbr />Star</a
+                        >Shooting<wbr />Star</a
                       >
                     </li>
                   </ul>
                 </section>
               </div>
-            </section>
-          </section>
-          <section class="tsd-panel-group tsd-member-group ">
-            <h2>Functions</h2>
-            <section
-              class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module"
-            >
-              <a name="isshootingstar" class="tsd-anchor"></a>
-              <h3>is<wbr />Shooting<wbr />Star</h3>
-              <ul
-                class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module"
-              >
-                <li class="tsd-signature tsd-kind-icon">
-                  is<wbr />Shooting<wbr />Star<span class="tsd-signature-symbol"
-                    >(</span
-                  >candles<span class="tsd-signature-symbol">: </span
-                  ><a
-                    href="../interfaces/_candle_.candle.html"
-                    class="tsd-signature-type"
-                    >Candle</a
-                  ><span class="tsd-signature-symbol">[]</span>, trend<span
-                    class="tsd-signature-symbol"
-                    >?: </span
-                  ><a href="_trend_.html#trend" class="tsd-signature-type"
-                    >Trend</a
-                  >, offset<span class="tsd-signature-symbol">?: </span
-                  ><span class="tsd-signature-type">number</span>, options<span
-                    class="tsd-signature-symbol"
-                    >?: </span
-                  ><a
-                    href="../interfaces/_candles_shootingstar_.options.html"
-                    class="tsd-signature-type"
-                    >Options</a
-                  ><span class="tsd-signature-symbol">)</span
-                  ><span class="tsd-signature-symbol">: </span
-                  ><span class="tsd-signature-type">boolean</span>
-                </li>
-              </ul>
-              <ul class="tsd-descriptions">
-                <li class="tsd-description">
-                  <aside class="tsd-sources">
-                    <ul>
-                      <li>
-                        Defined in
-                        <a
-                          href="https://github.com/claasahl/indicators/blob/6a1f3a1/src/candles/shootingStar.ts#L25"
-                          >candles/shootingStar.ts:25</a
-                        >
-                      </li>
-                    </ul>
-                  </aside>
-                  <div class="tsd-comment tsd-typography">
-                    <div class="lead">
-                      <p>
-                        Tests whether the given candle matches the pattern:
-                        Shooting Star
-                      </p>
-                    </div>
-                    <p>
-                      <img
-                        src="../media/candles/shootingStar.png"
-                        alt="sample"
-                      />
-                    </p>
-                    <a
-                      href="#rules"
-                      id="rules"
-                      style="color: inherit; text-decoration: none;"
-                    >
-                      <h3>Rules</h3>
-                    </a>
-                    <ol>
-                      <li>Prices gap open after an uptrend.</li>
-                      <li>
-                        A small real body is formed near the lower part of the
-                        price range.
-                      </li>
-                      <li>
-                        The upper shadow is at least three times as long as the
-                        body.
-                      </li>
-                      <li>The lower shadow is virtually nonexistent.</li>
-                    </ol>
-                    <a
-                      href="#remarks"
-                      id="remarks"
-                      style="color: inherit; text-decoration: none;"
-                    >
-                      <h3>Remarks</h3>
-                    </a>
-                    <ul>
-                      <li>Source: p.49</li>
-                      <li>
-                        Opposite Pattern: Inverted Hammer (see
-                        <a href="_candles_invertedhammer_.html#isinvertedhammer"
-                          >isInvertedHammer</a
-                        >)
-                      </li>
-                    </ul>
-                  </div>
-                  <h4 class="tsd-parameters-title">Parameters</h4>
-                  <ul class="tsd-parameters">
-                    <li>
-                      <h5>
-                        candles:
-                        <a
-                          href="../interfaces/_candle_.candle.html"
-                          class="tsd-signature-type"
-                          >Candle</a
-                        ><span class="tsd-signature-symbol">[]</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>candles to be tested against this pattern</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        trend:
-                        <a href="_trend_.html#trend" class="tsd-signature-type"
-                          >Trend</a
-                        ><span class="tsd-signature-symbol">
-                          =&nbsp;&quot;up&quot;</span
-                        >
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>trend in which candle occured</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        offset: <span class="tsd-signature-type">number</span
-                        ><span class="tsd-signature-symbol"> =&nbsp;0</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>offset to earliest / first candle</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        options:
-                        <a
-                          href="../interfaces/_candles_shootingstar_.options.html"
-                          class="tsd-signature-type"
-                          >Options</a
-                        ><span class="tsd-signature-symbol">
-                          =&nbsp;{gap: 1,ratio: 3,precision: 0}</span
-                        >
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>configurable options for this pattern</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <h4 class="tsd-returns-title">
-                    Returns <span class="tsd-signature-type">boolean</span>
-                  </h4>
-                </li>
-              </ul>
             </section>
           </section>
         </div>
@@ -303,28 +116,18 @@
                 <a href="_candles_shootingstar_.html"
                   >"candles/shooting<wbr />Star"</a
                 >
+                <ul>
+                  <li class=" tsd-kind-module tsd-parent-kind-external-module">
+                    <a href="_candles_shootingstar_.shootingstar.html"
+                      >Shooting<wbr />Star</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
           <nav class="tsd-navigation secondary menu-sticky">
-            <ul class="before-current">
-              <li
-                class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"
-              >
-                <a
-                  href="../interfaces/_candles_shootingstar_.options.html"
-                  class="tsd-kind-icon"
-                  >Options</a
-                >
-              </li>
-              <li class=" tsd-kind-function tsd-parent-kind-external-module">
-                <a
-                  href="_candles_shootingstar_.html#isshootingstar"
-                  class="tsd-kind-icon"
-                  >is<wbr />Shooting<wbr />Star</a
-                >
-              </li>
-            </ul>
+            <ul class="before-current"></ul>
           </nav>
         </div>
       </div>

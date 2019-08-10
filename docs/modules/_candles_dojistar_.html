@@ -58,10 +58,6 @@
                   <label class="tsd-widget" for="tsd-filter-externals"
                     >Externals</label
                   >
-                  <input type="checkbox" id="tsd-filter-only-exported" />
-                  <label class="tsd-widget" for="tsd-filter-only-exported"
-                    >Only exported</label
-                  >
                 </div>
               </div>
               <a href="#" class="tsd-widget menu no-caption" data-toggle="menu"
@@ -92,191 +88,19 @@
             <h2>Index</h2>
             <section class="tsd-panel tsd-index-panel">
               <div class="tsd-index-content">
-                <section class="tsd-index-section tsd-is-not-exported">
-                  <h3>Interfaces</h3>
-                  <ul class="tsd-index-list">
-                    <li
-                      class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"
-                    >
-                      <a
-                        href="../interfaces/_candles_dojistar_.options.html"
-                        class="tsd-kind-icon"
-                        >Options</a
-                      >
-                    </li>
-                  </ul>
-                </section>
                 <section class="tsd-index-section ">
-                  <h3>Functions</h3>
+                  <h3>Modules</h3>
                   <ul class="tsd-index-list">
-                    <li
-                      class="tsd-kind-function tsd-parent-kind-external-module"
-                    >
+                    <li class="tsd-kind-module tsd-parent-kind-external-module">
                       <a
-                        href="_candles_dojistar_.html#isdojistar"
+                        href="_candles_dojistar_.dojistar.html"
                         class="tsd-kind-icon"
-                        >is<wbr />Doji<wbr />Star</a
+                        >Doji<wbr />Star</a
                       >
                     </li>
                   </ul>
                 </section>
               </div>
-            </section>
-          </section>
-          <section class="tsd-panel-group tsd-member-group ">
-            <h2>Functions</h2>
-            <section
-              class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module"
-            >
-              <a name="isdojistar" class="tsd-anchor"></a>
-              <h3>is<wbr />Doji<wbr />Star</h3>
-              <ul
-                class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module"
-              >
-                <li class="tsd-signature tsd-kind-icon">
-                  is<wbr />Doji<wbr />Star<span class="tsd-signature-symbol"
-                    >(</span
-                  >candles<span class="tsd-signature-symbol">: </span
-                  ><a
-                    href="../interfaces/_candle_.candle.html"
-                    class="tsd-signature-type"
-                    >Candle</a
-                  ><span class="tsd-signature-symbol">[]</span>, trend<span
-                    class="tsd-signature-symbol"
-                    >: </span
-                  ><a href="_trend_.html#trend" class="tsd-signature-type"
-                    >Trend</a
-                  >, offset<span class="tsd-signature-symbol">?: </span
-                  ><span class="tsd-signature-type">number</span>, options<span
-                    class="tsd-signature-symbol"
-                    >?: </span
-                  ><a
-                    href="../interfaces/_candles_dojistar_.options.html"
-                    class="tsd-signature-type"
-                    >Options</a
-                  ><span class="tsd-signature-symbol">)</span
-                  ><span class="tsd-signature-symbol">: </span
-                  ><span class="tsd-signature-type">boolean</span>
-                </li>
-              </ul>
-              <ul class="tsd-descriptions">
-                <li class="tsd-description">
-                  <aside class="tsd-sources">
-                    <ul>
-                      <li>Defined in candles/dojiStar.ts:27</li>
-                    </ul>
-                  </aside>
-                  <div class="tsd-comment tsd-typography">
-                    <div class="lead">
-                      <p>
-                        Tests whether the given candle matches the pattern: Doji
-                        Star
-                      </p>
-                    </div>
-                    <p>
-                      <img
-                        src="../media/candles/dojiStar_up.png"
-                        alt="sample"
-                      />
-                    </p>
-                    <p>
-                      <img
-                        src="../media/candles/dojiStar_down.png"
-                        alt="sample"
-                      />
-                    </p>
-                    <a
-                      href="#rules"
-                      id="rules"
-                      style="color: inherit; text-decoration: none;"
-                    >
-                      <h3>Rules</h3>
-                    </a>
-                    <ol>
-                      <li>The first day is a long day.</li>
-                      <li>
-                        The second day gaps in the direction of the previous
-                        trend.
-                      </li>
-                      <li>The second day is a Doji.</li>
-                      <li>
-                        The shadows on the Doji should not be excessively long,
-                        especially in the bullish case.
-                      </li>
-                    </ol>
-                    <a
-                      href="#remarks"
-                      id="remarks"
-                      style="color: inherit; text-decoration: none;"
-                    >
-                      <h3>Remarks</h3>
-                    </a>
-                    <ul>
-                      <li>Source: p.62</li>
-                    </ul>
-                  </div>
-                  <h4 class="tsd-parameters-title">Parameters</h4>
-                  <ul class="tsd-parameters">
-                    <li>
-                      <h5>
-                        candles:
-                        <a
-                          href="../interfaces/_candle_.candle.html"
-                          class="tsd-signature-type"
-                          >Candle</a
-                        ><span class="tsd-signature-symbol">[]</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>candles to be tested against this pattern</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        trend:
-                        <a href="_trend_.html#trend" class="tsd-signature-type"
-                          >Trend</a
-                        >
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>trend in which candle occured</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        offset: <span class="tsd-signature-type">number</span
-                        ><span class="tsd-signature-symbol"> =&nbsp;0</span>
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>offset to earliest / first candle</p>
-                      </div>
-                    </li>
-                    <li>
-                      <h5>
-                        <span class="tsd-flag ts-flagDefault value"
-                          >Default value</span
-                        >
-                        options:
-                        <a
-                          href="../interfaces/_candles_dojistar_.options.html"
-                          class="tsd-signature-type"
-                          >Options</a
-                        ><span class="tsd-signature-symbol">
-                          =&nbsp;{gap:1, ratio:2,precision:0}</span
-                        >
-                      </h5>
-                      <div class="tsd-comment tsd-typography">
-                        <p>configurable options for this pattern</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <h4 class="tsd-returns-title">
-                    Returns <span class="tsd-signature-type">boolean</span>
-                  </h4>
-                </li>
-              </ul>
             </section>
           </section>
         </div>
@@ -288,28 +112,18 @@
               </li>
               <li class="current tsd-kind-external-module">
                 <a href="_candles_dojistar_.html">"candles/doji<wbr />Star"</a>
+                <ul>
+                  <li class=" tsd-kind-module tsd-parent-kind-external-module">
+                    <a href="_candles_dojistar_.dojistar.html"
+                      >Doji<wbr />Star</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
           <nav class="tsd-navigation secondary menu-sticky">
-            <ul class="before-current">
-              <li
-                class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"
-              >
-                <a
-                  href="../interfaces/_candles_dojistar_.options.html"
-                  class="tsd-kind-icon"
-                  >Options</a
-                >
-              </li>
-              <li class=" tsd-kind-function tsd-parent-kind-external-module">
-                <a
-                  href="_candles_dojistar_.html#isdojistar"
-                  class="tsd-kind-icon"
-                  >is<wbr />Doji<wbr />Star</a
-                >
-              </li>
-            </ul>
+            <ul class="before-current"></ul>
           </nav>
         </div>
       </div>
