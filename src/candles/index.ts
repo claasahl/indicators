@@ -13,3 +13,5 @@ export * from "./blackMarabozu";
 export * from "./whiteMarabozu";
 export * from "./openingMarabozu";
 export * from "./closingMarabozu";
+export * from "./invertedHammer";
+export * from "./shootingStar";
