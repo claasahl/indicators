@@ -10,7 +10,7 @@
     "precommit": "pretty-quick --staged",
     "prepare": "npm run build",
     "build": "tsc && npm run samples && npm run docs",
-    "docs": "typedoc --media ./assets/ --excludeNotExported",
+    "docs": "typedoc --media ./assets/ --excludeNotExported && echo '' > ./docs/.nojekyll",
     "samples": "ts-node src/samples.ts",
     "start": "ts-node src/index.ts"
   },
