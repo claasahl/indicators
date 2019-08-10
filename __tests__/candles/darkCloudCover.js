@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isDarkCloudCover: pattern } = require("../../build/candles");
+const { test: pattern } = require("../../build/candles").DarkCloudCover;
 
 describe("Dark Cloud Cover", () => {
   test("valid JSON sample", () => {

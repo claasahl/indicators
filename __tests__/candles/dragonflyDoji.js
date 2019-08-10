@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isDragonflyDoji: pattern } = require("../../build/candles");
+const { test: pattern } = require("../../build/candles").DragonflyDoji;
 
 describe("Dragonfly Doji", () => {
   test("valid JSON sample", () => {

@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isLongDay: pattern } = require("../../build/candles");
+const { test: pattern } = require("../../build/candles").LongDay;
 
 describe("Long Day", () => {
   test("valid JSON sample", () => {

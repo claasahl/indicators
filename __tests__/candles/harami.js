@@ -1,6 +1,6 @@
 const { readFileSync } = require("fs");
 
-const { isHarami: pattern } = require("../../build/candles");
+const { test: pattern } = require("../../build/candles").Harami;
 
 describe("Harami", () => {
   test("valid JSON sample (bearish trend)", () => {
