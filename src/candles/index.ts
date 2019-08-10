@@ -18,3 +18,5 @@ export * from "./invertedHammer";
 export * from "./shootingStar";
 export * from "./piercingLine";
 export * from "./darkCloudCover";
+export * from "./longDay";
+export * from "./shortDay";
