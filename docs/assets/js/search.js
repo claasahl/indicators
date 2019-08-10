@@ -422,100 +422,12 @@ typedoc.search.data = {
     {
       id: 53,
       kind: 1,
-      name: '"candles/index"',
-      url: "modules/_candles_index_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 54,
-      kind: 1,
-      name: '"indicators/simpleMovingAverage"',
-      url: "modules/_indicators_simplemovingaverage_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 55,
-      kind: 64,
-      name: "simpleMovingAverage",
-      url: "modules/_indicators_simplemovingaverage_.html#simplemovingaverage",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"indicators/simpleMovingAverage"'
-    },
-    {
-      id: 56,
-      kind: 1,
-      name: '"indicators/index"',
-      url: "modules/_indicators_index_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 57,
-      kind: 1,
-      name: '"index"',
-      url: "modules/_index_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 58,
-      kind: 1,
-      name: '"samples"',
-      url: "modules/_samples_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 59,
-      kind: 256,
-      name: "Sample",
-      url: "interfaces/_samples_.sample.html",
-      classes:
-        "tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported",
-      parent: '"samples"'
-    },
-    {
-      id: 60,
-      kind: 1024,
-      name: "trend",
-      url: "interfaces/_samples_.sample.html#trend",
-      classes:
-        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
-      parent: '"samples".Sample'
-    },
-    {
-      id: 61,
-      kind: 1024,
-      name: "candles",
-      url: "interfaces/_samples_.sample.html#candles",
-      classes:
-        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
-      parent: '"samples".Sample'
-    },
-    {
-      id: 62,
-      kind: 64,
-      name: "drawCandles",
-      url: "modules/_samples_.html#drawcandles",
-      classes:
-        "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
-      parent: '"samples"'
-    },
-    {
-      id: 63,
-      kind: 64,
-      name: "generateSamples",
-      url: "modules/_samples_.html#generatesamples",
-      classes:
-        "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
-      parent: '"samples"'
-    },
-    {
-      id: 64,
-      kind: 1,
       name: '"candles/invertedHammer"',
       url: "modules/_candles_invertedhammer_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 65,
+      id: 54,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_invertedhammer_.options.html",
@@ -524,7 +436,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer"'
     },
     {
-      id: 66,
+      id: 55,
       kind: 1024,
       name: "gap",
       url: "interfaces/_candles_invertedhammer_.options.html#gap",
@@ -533,7 +445,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".Options'
     },
     {
-      id: 67,
+      id: 56,
       kind: 1024,
       name: "ratio",
       url: "interfaces/_candles_invertedhammer_.options.html#ratio",
@@ -542,7 +454,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".Options'
     },
     {
-      id: 68,
+      id: 57,
       kind: 1024,
       name: "precision",
       url: "interfaces/_candles_invertedhammer_.options.html#precision",
@@ -551,7 +463,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".Options'
     },
     {
-      id: 69,
+      id: 58,
       kind: 64,
       name: "isInvertedHammer",
       url: "modules/_candles_invertedhammer_.html#isinvertedhammer",
@@ -559,14 +471,14 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer"'
     },
     {
-      id: 70,
+      id: 59,
       kind: 1,
       name: '"candles/shootingStar"',
       url: "modules/_candles_shootingstar_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 71,
+      id: 60,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_shootingstar_.options.html",
@@ -575,7 +487,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar"'
     },
     {
-      id: 72,
+      id: 61,
       kind: 1024,
       name: "gap",
       url: "interfaces/_candles_shootingstar_.options.html#gap",
@@ -584,7 +496,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".Options'
     },
     {
-      id: 73,
+      id: 62,
       kind: 1024,
       name: "ratio",
       url: "interfaces/_candles_shootingstar_.options.html#ratio",
@@ -593,7 +505,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".Options'
     },
     {
-      id: 74,
+      id: 63,
       kind: 1024,
       name: "precision",
       url: "interfaces/_candles_shootingstar_.options.html#precision",
@@ -602,12 +514,130 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".Options'
     },
     {
-      id: 75,
+      id: 64,
       kind: 64,
       name: "isShootingStar",
       url: "modules/_candles_shootingstar_.html#isshootingstar",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: '"candles/shootingStar"'
+    },
+    {
+      id: 65,
+      kind: 1,
+      name: '"candles/piercingLine"',
+      url: "modules/_candles_piercingline_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 66,
+      kind: 64,
+      name: "isPiercingLine",
+      url: "modules/_candles_piercingline_.html#ispiercingline",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/piercingLine"'
+    },
+    {
+      id: 67,
+      kind: 1,
+      name: '"candles/darkCloudCover"',
+      url: "modules/_candles_darkcloudcover_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 68,
+      kind: 64,
+      name: "isDarkCloudCover",
+      url: "modules/_candles_darkcloudcover_.html#isdarkcloudcover",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"candles/darkCloudCover"'
+    },
+    {
+      id: 69,
+      kind: 1,
+      name: '"candles/index"',
+      url: "modules/_candles_index_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 70,
+      kind: 1,
+      name: '"indicators/simpleMovingAverage"',
+      url: "modules/_indicators_simplemovingaverage_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 71,
+      kind: 64,
+      name: "simpleMovingAverage",
+      url: "modules/_indicators_simplemovingaverage_.html#simplemovingaverage",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"indicators/simpleMovingAverage"'
+    },
+    {
+      id: 72,
+      kind: 1,
+      name: '"indicators/index"',
+      url: "modules/_indicators_index_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 73,
+      kind: 1,
+      name: '"index"',
+      url: "modules/_index_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 74,
+      kind: 1,
+      name: '"samples"',
+      url: "modules/_samples_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 75,
+      kind: 256,
+      name: "Sample",
+      url: "interfaces/_samples_.sample.html",
+      classes:
+        "tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"samples"'
+    },
+    {
+      id: 76,
+      kind: 1024,
+      name: "trend",
+      url: "interfaces/_samples_.sample.html#trend",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"samples".Sample'
+    },
+    {
+      id: 77,
+      kind: 1024,
+      name: "candles",
+      url: "interfaces/_samples_.sample.html#candles",
+      classes:
+        "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      parent: '"samples".Sample'
+    },
+    {
+      id: 78,
+      kind: 64,
+      name: "drawCandles",
+      url: "modules/_samples_.html#drawcandles",
+      classes:
+        "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"samples"'
+    },
+    {
+      id: 79,
+      kind: 64,
+      name: "generateSamples",
+      url: "modules/_samples_.html#generatesamples",
+      classes:
+        "tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported",
+      parent: '"samples"'
     }
   ]
 };
