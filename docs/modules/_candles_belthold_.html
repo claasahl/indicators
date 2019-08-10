@@ -122,15 +122,20 @@
                 <li class="tsd-signature tsd-kind-icon">
                   is<wbr />Belt<wbr />Hold<span class="tsd-signature-symbol"
                     >(</span
-                  >candle<span class="tsd-signature-symbol">: </span
+                  >candles<span class="tsd-signature-symbol">: </span
                   ><a
                     href="../interfaces/_candle_.candle.html"
                     class="tsd-signature-type"
                     >Candle</a
-                  >, trend<span class="tsd-signature-symbol">: </span
+                  ><span class="tsd-signature-symbol">[]</span>, trend<span
+                    class="tsd-signature-symbol"
+                    >: </span
                   ><a href="_trend_.html#trend" class="tsd-signature-type"
                     >Trend</a
-                  >, ratio<span class="tsd-signature-symbol">?: </span
+                  >, offset<span class="tsd-signature-symbol">?: </span
+                  ><span class="tsd-signature-type">number</span>, ratio<span
+                    class="tsd-signature-symbol"
+                    >?: </span
                   ><span class="tsd-signature-type">number</span
                   ><span class="tsd-signature-symbol">)</span
                   ><span class="tsd-signature-symbol">: </span
@@ -144,8 +149,8 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/claasahl/indicators/blob/deda69f/src/candles/beltHold.ts#L24"
-                          >candles/beltHold.ts:24</a
+                          href="https://github.com/claasahl/indicators/blob/3667b62/src/candles/beltHold.ts#L25"
+                          >candles/beltHold.ts:25</a
                         >
                       </li>
                     </ul>
@@ -205,15 +210,15 @@
                   <ul class="tsd-parameters">
                     <li>
                       <h5>
-                        candle:
+                        candles:
                         <a
                           href="../interfaces/_candle_.candle.html"
                           class="tsd-signature-type"
                           >Candle</a
-                        >
+                        ><span class="tsd-signature-symbol">[]</span>
                       </h5>
                       <div class="tsd-comment tsd-typography">
-                        <p>candle to be tested against this pattern</p>
+                        <p>candles to be tested against this pattern</p>
                       </div>
                     </li>
                     <li>
@@ -225,6 +230,18 @@
                       </h5>
                       <div class="tsd-comment tsd-typography">
                         <p>trend in which candle occured</p>
+                      </div>
+                    </li>
+                    <li>
+                      <h5>
+                        <span class="tsd-flag ts-flagDefault value"
+                          >Default value</span
+                        >
+                        offset: <span class="tsd-signature-type">number</span
+                        ><span class="tsd-signature-symbol"> =&nbsp;0</span>
+                      </h5>
+                      <div class="tsd-comment tsd-typography">
+                        <p>offset to earliest / first candle</p>
                       </div>
                     </li>
                     <li>
