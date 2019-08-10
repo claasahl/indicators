@@ -15,7 +15,7 @@ import { isMarabozu } from "./marabozu";
  *
  * ### Remarks
  * - Source: p.14
- * - Opposite Pattern: Hammer (see [[isBlackMarabozu]])
+ * - Opposite Pattern: Black Marabozu (see [[isBlackMarabozu]])
  *
  * @param candles candles to be tested against this pattern
  * @param trend trend in which candle occured
