@@ -8,3 +8,8 @@ export * from "./doji";
 export * from "./dragonflyDoji";
 export * from "./gravestoneDoji";
 export * from "./longLeggedDoji";
+export * from "./marabozu";
+export * from "./blackMarabozu";
+export * from "./whiteMarabozu";
+export * from "./openingMarabozu";
+export * from "./closingMarabozu";
