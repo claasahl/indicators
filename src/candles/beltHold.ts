@@ -17,15 +17,18 @@ import { Trend, down, up } from "../trend";
  * ### Remarks
  * - Source: p.32
  *
- * @param candle candle to be tested against this pattern
+ * @param candles candles to be tested against this pattern
  * @param trend trend in which candle occured
+ * @param offset offset to earliest / first candle
  * @param ratio ratio between body and tail
  */
 export function isBeltHold(
-  candle: Candle,
+  candles: Candle[],
   trend: Trend,
+  offset: number = 0,
   ratio: number = 2
 ): boolean {
+  const candle = candles[offset];
   const bearish =
     down(trend) &&
     candle.open === candle.low &&

@@ -17,15 +17,18 @@ import { Trend, down } from "../trend";
  * - Source: p.27
  * - Opposite Pattern: Hanging Man (see [[isHangingMan]])
  *
- * @param candle candle to be tested against this pattern
+ * @param candles candles to be tested against this pattern
  * @param trend trend in which candle occured
+ * @param offset offset to earliest / first candle
  * @param ratio ratio between body and tail
  */
 export function isHammer(
-  candle: Candle,
+  candles: Candle[],
   trend: Trend = "down",
+  offset: number = 0,
   ratio: number = 2
 ): boolean {
+  const candle = candles[offset];
   return (
     down(trend) &&
     tail(candle) > body(candle) * ratio &&
