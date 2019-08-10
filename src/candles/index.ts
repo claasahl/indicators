@@ -3,6 +3,7 @@ export * from "./hammer";
 export * from "./hangingMan";
 export * from "./engulfing";
 export * from "./harami";
+export * from "./haramiCross";
 export * from "./doji";
 export * from "./dragonflyDoji";
 export * from "./gravestoneDoji";
