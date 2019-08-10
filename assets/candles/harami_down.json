@@ -1,5 +1,6 @@
 {
   "trend": "down",
+  "offset": 0,
   "candles": [
     {
       "open": 65,

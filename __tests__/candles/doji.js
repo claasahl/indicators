@@ -5,8 +5,8 @@ const { isDoji: pattern } = require("../../build/candles");
 describe("Doji", () => {
   test("valid JSON sample", () => {
     const content = readFileSync("./assets/candles/doji.json").toString();
-    const { candles, trend } = JSON.parse(content);
-    expect(pattern(candles, trend)).toBe(true);
+    const { candles, trend, offset } = JSON.parse(content);
+    expect(pattern(candles, trend, offset)).toBe(true);
   });
   test("matching set of candles", () => {
     const candle = [

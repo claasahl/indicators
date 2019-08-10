@@ -5,8 +5,8 @@ const { isHangingMan: pattern } = require("../../build/candles");
 describe("Hanging Man", () => {
   test("valid JSON sample", () => {
     const content = readFileSync("./assets/candles/hangingMan.json").toString();
-    const { candles, trend } = JSON.parse(content);
-    expect(pattern(candles, trend)).toBe(true);
+    const { candles, trend, offset } = JSON.parse(content);
+    expect(pattern(candles, trend, offset)).toBe(true);
   });
   test("matching set of candles", () => {
     const candles = [
