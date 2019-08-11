@@ -361,12 +361,176 @@ typedoc.search.data = {
     {
       id: 44,
       kind: 1,
+      name: '"indicators/simpleMovingAverage"',
+      url: "modules/_indicators_simplemovingaverage_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 45,
+      kind: 64,
+      name: "simpleMovingAverage",
+      url: "modules/_indicators_simplemovingaverage_.html#simplemovingaverage",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"indicators/simpleMovingAverage"'
+    },
+    {
+      id: 46,
+      kind: 1,
+      name: '"indicators/index"',
+      url: "modules/_indicators_index_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 47,
+      kind: 1,
+      name: '"candles/longDay"',
+      url: "modules/_candles_longday_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 48,
+      kind: 2,
+      name: "LongDay",
+      url: "modules/_candles_longday_.longday.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/longDay"'
+    },
+    {
+      id: 49,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_longday_.longday.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/longDay".LongDay'
+    },
+    {
+      id: 50,
+      kind: 1024,
+      name: "noOfCandles",
+      url: "interfaces/_candles_longday_.longday.options.html#noofcandles",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/longDay".LongDay.Options'
+    },
+    {
+      id: 51,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_longday_.longday.options.html#ratio",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/longDay".LongDay.Options'
+    },
+    {
+      id: 52,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_longday_.longday.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/longDay".LongDay'
+    },
+    {
+      id: 53,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_longday_.longday.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/longDay".LongDay'
+    },
+    {
+      id: 54,
+      kind: 32,
+      name: "noOfCandles",
+      url: "modules/_candles_longday_.longday.html#defaults.noofcandles",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/longDay".LongDay.defaults'
+    },
+    {
+      id: 55,
+      kind: 32,
+      name: "ratio",
+      url: "modules/_candles_longday_.longday.html#defaults.ratio",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/longDay".LongDay.defaults'
+    },
+    {
+      id: 56,
+      kind: 1,
+      name: '"candles/shortDay"',
+      url: "modules/_candles_shortday_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 57,
+      kind: 2,
+      name: "ShortDay",
+      url: "modules/_candles_shortday_.shortday.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/shortDay"'
+    },
+    {
+      id: 58,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_shortday_.shortday.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/shortDay".ShortDay'
+    },
+    {
+      id: 59,
+      kind: 1024,
+      name: "noOfCandles",
+      url: "interfaces/_candles_shortday_.shortday.options.html#noofcandles",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/shortDay".ShortDay.Options'
+    },
+    {
+      id: 60,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_shortday_.shortday.options.html#ratio",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/shortDay".ShortDay.Options'
+    },
+    {
+      id: 61,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_shortday_.shortday.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/shortDay".ShortDay'
+    },
+    {
+      id: 62,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_shortday_.shortday.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/shortDay".ShortDay'
+    },
+    {
+      id: 63,
+      kind: 32,
+      name: "noOfCandles",
+      url: "modules/_candles_shortday_.shortday.html#defaults.noofcandles",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/shortDay".ShortDay.defaults'
+    },
+    {
+      id: 64,
+      kind: 32,
+      name: "ratio",
+      url: "modules/_candles_shortday_.shortday.html#defaults.ratio",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/shortDay".ShortDay.defaults'
+    },
+    {
+      id: 65,
+      kind: 1,
       name: '"candles/harami"',
       url: "modules/_candles_harami_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 45,
+      id: 66,
       kind: 2,
       name: "Harami",
       url: "modules/_candles_harami_.harami.html",
@@ -374,7 +538,31 @@ typedoc.search.data = {
       parent: '"candles/harami"'
     },
     {
-      id: 46,
+      id: 67,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_harami_.harami.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/harami".Harami'
+    },
+    {
+      id: 68,
+      kind: 1024,
+      name: "longDay",
+      url: "interfaces/_candles_harami_.harami.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/harami".Harami.Options'
+    },
+    {
+      id: 69,
+      kind: 1024,
+      name: "shortDay",
+      url: "interfaces/_candles_harami_.harami.options.html#shortday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/harami".Harami.Options'
+    },
+    {
+      id: 70,
       kind: 64,
       name: "test",
       url: "modules/_candles_harami_.harami.html#test",
@@ -382,14 +570,38 @@ typedoc.search.data = {
       parent: '"candles/harami".Harami'
     },
     {
-      id: 47,
+      id: 71,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_harami_.harami.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/harami".Harami'
+    },
+    {
+      id: 72,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_harami_.harami.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/harami".Harami.defaults'
+    },
+    {
+      id: 73,
+      kind: 32,
+      name: "shortDay",
+      url: "modules/_candles_harami_.harami.html#defaults.shortday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/harami".Harami.defaults'
+    },
+    {
+      id: 74,
       kind: 1,
       name: '"candles/doji"',
       url: "modules/_candles_doji_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 48,
+      id: 75,
       kind: 2,
       name: "Doji",
       url: "modules/_candles_doji_.doji.html",
@@ -397,7 +609,7 @@ typedoc.search.data = {
       parent: '"candles/doji"'
     },
     {
-      id: 49,
+      id: 76,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_doji_.doji.options.html",
@@ -405,7 +617,7 @@ typedoc.search.data = {
       parent: '"candles/doji".Doji'
     },
     {
-      id: 50,
+      id: 77,
       kind: 1024,
       name: "precision",
       url: "interfaces/_candles_doji_.doji.options.html#precision",
@@ -413,7 +625,7 @@ typedoc.search.data = {
       parent: '"candles/doji".Doji.Options'
     },
     {
-      id: 51,
+      id: 78,
       kind: 64,
       name: "test",
       url: "modules/_candles_doji_.doji.html#test",
@@ -421,7 +633,7 @@ typedoc.search.data = {
       parent: '"candles/doji".Doji'
     },
     {
-      id: 52,
+      id: 79,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_doji_.doji.html#defaults",
@@ -429,7 +641,7 @@ typedoc.search.data = {
       parent: '"candles/doji".Doji'
     },
     {
-      id: 53,
+      id: 80,
       kind: 32,
       name: "precision",
       url: "modules/_candles_doji_.doji.html#defaults.precision",
@@ -437,14 +649,14 @@ typedoc.search.data = {
       parent: '"candles/doji".Doji.defaults'
     },
     {
-      id: 54,
+      id: 81,
       kind: 1,
       name: '"candles/haramiCross"',
       url: "modules/_candles_haramicross_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 55,
+      id: 82,
       kind: 2,
       name: "HaramiCross",
       url: "modules/_candles_haramicross_.haramicross.html",
@@ -452,7 +664,31 @@ typedoc.search.data = {
       parent: '"candles/haramiCross"'
     },
     {
-      id: 56,
+      id: 83,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_haramicross_.haramicross.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/haramiCross".HaramiCross'
+    },
+    {
+      id: 84,
+      kind: 1024,
+      name: "doji",
+      url: "interfaces/_candles_haramicross_.haramicross.options.html#doji",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/haramiCross".HaramiCross.Options'
+    },
+    {
+      id: 85,
+      kind: 1024,
+      name: "longDay",
+      url: "interfaces/_candles_haramicross_.haramicross.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/haramiCross".HaramiCross.Options'
+    },
+    {
+      id: 86,
       kind: 64,
       name: "test",
       url: "modules/_candles_haramicross_.haramicross.html#test",
@@ -460,30 +696,38 @@ typedoc.search.data = {
       parent: '"candles/haramiCross".HaramiCross'
     },
     {
-      id: 57,
-      kind: 4194304,
-      name: "Options",
-      url: "modules/_candles_haramicross_.haramicross.html#options",
-      classes: "tsd-kind-type-alias tsd-parent-kind-module",
-      parent: '"candles/haramiCross".HaramiCross'
-    },
-    {
-      id: 58,
-      kind: 32,
+      id: 87,
+      kind: 2097152,
       name: "defaults",
       url: "modules/_candles_haramicross_.haramicross.html#defaults",
-      classes: "tsd-kind-variable tsd-parent-kind-module",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
       parent: '"candles/haramiCross".HaramiCross'
     },
     {
-      id: 59,
+      id: 88,
+      kind: 32,
+      name: "doji",
+      url: "modules/_candles_haramicross_.haramicross.html#defaults.doji",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/haramiCross".HaramiCross.defaults'
+    },
+    {
+      id: 89,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_haramicross_.haramicross.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/haramiCross".HaramiCross.defaults'
+    },
+    {
+      id: 90,
       kind: 1,
       name: '"candles/dragonflyDoji"',
       url: "modules/_candles_dragonflydoji_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 60,
+      id: 91,
       kind: 2,
       name: "DragonflyDoji",
       url: "modules/_candles_dragonflydoji_.dragonflydoji.html",
@@ -491,7 +735,7 @@ typedoc.search.data = {
       parent: '"candles/dragonflyDoji"'
     },
     {
-      id: 61,
+      id: 92,
       kind: 64,
       name: "test",
       url: "modules/_candles_dragonflydoji_.dragonflydoji.html#test",
@@ -499,7 +743,7 @@ typedoc.search.data = {
       parent: '"candles/dragonflyDoji".DragonflyDoji'
     },
     {
-      id: 62,
+      id: 93,
       kind: 4194304,
       name: "Options",
       url: "modules/_candles_dragonflydoji_.dragonflydoji.html#options",
@@ -507,7 +751,7 @@ typedoc.search.data = {
       parent: '"candles/dragonflyDoji".DragonflyDoji'
     },
     {
-      id: 63,
+      id: 94,
       kind: 32,
       name: "defaults",
       url: "modules/_candles_dragonflydoji_.dragonflydoji.html#defaults",
@@ -515,14 +759,14 @@ typedoc.search.data = {
       parent: '"candles/dragonflyDoji".DragonflyDoji'
     },
     {
-      id: 64,
+      id: 95,
       kind: 1,
       name: '"candles/gravestoneDoji"',
       url: "modules/_candles_gravestonedoji_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 65,
+      id: 96,
       kind: 2,
       name: "GravestoneDoji",
       url: "modules/_candles_gravestonedoji_.gravestonedoji.html",
@@ -530,7 +774,7 @@ typedoc.search.data = {
       parent: '"candles/gravestoneDoji"'
     },
     {
-      id: 66,
+      id: 97,
       kind: 64,
       name: "test",
       url: "modules/_candles_gravestonedoji_.gravestonedoji.html#test",
@@ -538,7 +782,7 @@ typedoc.search.data = {
       parent: '"candles/gravestoneDoji".GravestoneDoji'
     },
     {
-      id: 67,
+      id: 98,
       kind: 4194304,
       name: "Options",
       url: "modules/_candles_gravestonedoji_.gravestonedoji.html#options",
@@ -546,7 +790,7 @@ typedoc.search.data = {
       parent: '"candles/gravestoneDoji".GravestoneDoji'
     },
     {
-      id: 68,
+      id: 99,
       kind: 32,
       name: "defaults",
       url: "modules/_candles_gravestonedoji_.gravestonedoji.html#defaults",
@@ -554,14 +798,14 @@ typedoc.search.data = {
       parent: '"candles/gravestoneDoji".GravestoneDoji'
     },
     {
-      id: 69,
+      id: 100,
       kind: 1,
       name: '"candles/longLeggedDoji"',
       url: "modules/_candles_longleggeddoji_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 70,
+      id: 101,
       kind: 2,
       name: "LongLeggedDoji",
       url: "modules/_candles_longleggeddoji_.longleggeddoji.html",
@@ -569,7 +813,33 @@ typedoc.search.data = {
       parent: '"candles/longLeggedDoji"'
     },
     {
-      id: 71,
+      id: 102,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_longleggeddoji_.longleggeddoji.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/longLeggedDoji".LongLeggedDoji'
+    },
+    {
+      id: 103,
+      kind: 1024,
+      name: "doji",
+      url:
+        "interfaces/_candles_longleggeddoji_.longleggeddoji.options.html#doji",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/longLeggedDoji".LongLeggedDoji.Options'
+    },
+    {
+      id: 104,
+      kind: 1024,
+      name: "precision",
+      url:
+        "interfaces/_candles_longleggeddoji_.longleggeddoji.options.html#precision",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/longLeggedDoji".LongLeggedDoji.Options'
+    },
+    {
+      id: 105,
       kind: 64,
       name: "test",
       url: "modules/_candles_longleggeddoji_.longleggeddoji.html#test",
@@ -577,15 +847,7 @@ typedoc.search.data = {
       parent: '"candles/longLeggedDoji".LongLeggedDoji'
     },
     {
-      id: 72,
-      kind: 4194304,
-      name: "Options",
-      url: "modules/_candles_longleggeddoji_.longleggeddoji.html#options",
-      classes: "tsd-kind-type-alias tsd-parent-kind-module",
-      parent: '"candles/longLeggedDoji".LongLeggedDoji'
-    },
-    {
-      id: 73,
+      id: 106,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_longleggeddoji_.longleggeddoji.html#defaults",
@@ -593,23 +855,31 @@ typedoc.search.data = {
       parent: '"candles/longLeggedDoji".LongLeggedDoji'
     },
     {
-      id: 74,
+      id: 107,
       kind: 32,
-      name: "precision2",
+      name: "precision",
       url:
-        "modules/_candles_longleggeddoji_.longleggeddoji.html#defaults.precision2",
+        "modules/_candles_longleggeddoji_.longleggeddoji.html#defaults.precision",
       classes: "tsd-kind-variable tsd-parent-kind-object-literal",
       parent: '"candles/longLeggedDoji".LongLeggedDoji.defaults'
     },
     {
-      id: 75,
+      id: 108,
+      kind: 32,
+      name: "doji",
+      url: "modules/_candles_longleggeddoji_.longleggeddoji.html#defaults.doji",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/longLeggedDoji".LongLeggedDoji.defaults'
+    },
+    {
+      id: 109,
       kind: 1,
       name: '"candles/dojiStar"',
       url: "modules/_candles_dojistar_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 76,
+      id: 110,
       kind: 2,
       name: "DojiStar",
       url: "modules/_candles_dojistar_.dojistar.html",
@@ -617,7 +887,47 @@ typedoc.search.data = {
       parent: '"candles/dojiStar"'
     },
     {
-      id: 77,
+      id: 111,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_dojistar_.dojistar.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/dojiStar".DojiStar'
+    },
+    {
+      id: 112,
+      kind: 1024,
+      name: "doji",
+      url: "interfaces/_candles_dojistar_.dojistar.options.html#doji",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/dojiStar".DojiStar.Options'
+    },
+    {
+      id: 113,
+      kind: 1024,
+      name: "longDay",
+      url: "interfaces/_candles_dojistar_.dojistar.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/dojiStar".DojiStar.Options'
+    },
+    {
+      id: 114,
+      kind: 1024,
+      name: "gap",
+      url: "interfaces/_candles_dojistar_.dojistar.options.html#gap",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/dojiStar".DojiStar.Options'
+    },
+    {
+      id: 115,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_dojistar_.dojistar.options.html#ratio",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/dojiStar".DojiStar.Options'
+    },
+    {
+      id: 116,
       kind: 64,
       name: "test",
       url: "modules/_candles_dojistar_.dojistar.html#test",
@@ -625,15 +935,7 @@ typedoc.search.data = {
       parent: '"candles/dojiStar".DojiStar'
     },
     {
-      id: 78,
-      kind: 4194304,
-      name: "Options",
-      url: "modules/_candles_dojistar_.dojistar.html#options",
-      classes: "tsd-kind-type-alias tsd-parent-kind-module",
-      parent: '"candles/dojiStar".DojiStar'
-    },
-    {
-      id: 79,
+      id: 117,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_dojistar_.dojistar.html#defaults",
@@ -641,7 +943,7 @@ typedoc.search.data = {
       parent: '"candles/dojiStar".DojiStar'
     },
     {
-      id: 80,
+      id: 118,
       kind: 32,
       name: "gap",
       url: "modules/_candles_dojistar_.dojistar.html#defaults.gap",
@@ -649,7 +951,7 @@ typedoc.search.data = {
       parent: '"candles/dojiStar".DojiStar.defaults'
     },
     {
-      id: 81,
+      id: 119,
       kind: 32,
       name: "ratio",
       url: "modules/_candles_dojistar_.dojistar.html#defaults.ratio",
@@ -657,14 +959,30 @@ typedoc.search.data = {
       parent: '"candles/dojiStar".DojiStar.defaults'
     },
     {
-      id: 82,
+      id: 120,
+      kind: 32,
+      name: "doji",
+      url: "modules/_candles_dojistar_.dojistar.html#defaults.doji",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/dojiStar".DojiStar.defaults'
+    },
+    {
+      id: 121,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_dojistar_.dojistar.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/dojiStar".DojiStar.defaults'
+    },
+    {
+      id: 122,
       kind: 1,
       name: '"candles/marabozu"',
       url: "modules/_candles_marabozu_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 83,
+      id: 123,
       kind: 2,
       name: "Marabozu",
       url: "modules/_candles_marabozu_.marabozu.html",
@@ -672,7 +990,7 @@ typedoc.search.data = {
       parent: '"candles/marabozu"'
     },
     {
-      id: 84,
+      id: 124,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_marabozu_.marabozu.options.html",
@@ -680,7 +998,7 @@ typedoc.search.data = {
       parent: '"candles/marabozu".Marabozu'
     },
     {
-      id: 85,
+      id: 125,
       kind: 1024,
       name: "precision",
       url: "interfaces/_candles_marabozu_.marabozu.options.html#precision",
@@ -688,7 +1006,7 @@ typedoc.search.data = {
       parent: '"candles/marabozu".Marabozu.Options'
     },
     {
-      id: 86,
+      id: 126,
       kind: 64,
       name: "test",
       url: "modules/_candles_marabozu_.marabozu.html#test",
@@ -696,7 +1014,7 @@ typedoc.search.data = {
       parent: '"candles/marabozu".Marabozu'
     },
     {
-      id: 87,
+      id: 127,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_marabozu_.marabozu.html#defaults",
@@ -704,7 +1022,7 @@ typedoc.search.data = {
       parent: '"candles/marabozu".Marabozu'
     },
     {
-      id: 88,
+      id: 128,
       kind: 32,
       name: "precision",
       url: "modules/_candles_marabozu_.marabozu.html#defaults.precision",
@@ -712,14 +1030,14 @@ typedoc.search.data = {
       parent: '"candles/marabozu".Marabozu.defaults'
     },
     {
-      id: 89,
+      id: 129,
       kind: 1,
       name: '"candles/blackMarabozu"',
       url: "modules/_candles_blackmarabozu_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 90,
+      id: 130,
       kind: 2,
       name: "BlackMarabozu",
       url: "modules/_candles_blackmarabozu_.blackmarabozu.html",
@@ -727,7 +1045,7 @@ typedoc.search.data = {
       parent: '"candles/blackMarabozu"'
     },
     {
-      id: 91,
+      id: 131,
       kind: 64,
       name: "test",
       url: "modules/_candles_blackmarabozu_.blackmarabozu.html#test",
@@ -735,7 +1053,7 @@ typedoc.search.data = {
       parent: '"candles/blackMarabozu".BlackMarabozu'
     },
     {
-      id: 92,
+      id: 132,
       kind: 4194304,
       name: "Options",
       url: "modules/_candles_blackmarabozu_.blackmarabozu.html#options",
@@ -743,7 +1061,7 @@ typedoc.search.data = {
       parent: '"candles/blackMarabozu".BlackMarabozu'
     },
     {
-      id: 93,
+      id: 133,
       kind: 32,
       name: "defaults",
       url: "modules/_candles_blackmarabozu_.blackmarabozu.html#defaults",
@@ -751,14 +1069,14 @@ typedoc.search.data = {
       parent: '"candles/blackMarabozu".BlackMarabozu'
     },
     {
-      id: 94,
+      id: 134,
       kind: 1,
       name: '"candles/whiteMarabozu"',
       url: "modules/_candles_whitemarabozu_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 95,
+      id: 135,
       kind: 2,
       name: "WhiteMarabozu",
       url: "modules/_candles_whitemarabozu_.whitemarabozu.html",
@@ -766,7 +1084,7 @@ typedoc.search.data = {
       parent: '"candles/whiteMarabozu"'
     },
     {
-      id: 96,
+      id: 136,
       kind: 64,
       name: "test",
       url: "modules/_candles_whitemarabozu_.whitemarabozu.html#test",
@@ -774,7 +1092,7 @@ typedoc.search.data = {
       parent: '"candles/whiteMarabozu".WhiteMarabozu'
     },
     {
-      id: 97,
+      id: 137,
       kind: 4194304,
       name: "Options",
       url: "modules/_candles_whitemarabozu_.whitemarabozu.html#options",
@@ -782,7 +1100,7 @@ typedoc.search.data = {
       parent: '"candles/whiteMarabozu".WhiteMarabozu'
     },
     {
-      id: 98,
+      id: 138,
       kind: 32,
       name: "defaults",
       url: "modules/_candles_whitemarabozu_.whitemarabozu.html#defaults",
@@ -790,14 +1108,14 @@ typedoc.search.data = {
       parent: '"candles/whiteMarabozu".WhiteMarabozu'
     },
     {
-      id: 99,
+      id: 139,
       kind: 1,
       name: '"candles/openingMarabozu"',
       url: "modules/_candles_openingmarabozu_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 100,
+      id: 140,
       kind: 2,
       name: "OpeningMarabozu",
       url: "modules/_candles_openingmarabozu_.openingmarabozu.html",
@@ -805,7 +1123,7 @@ typedoc.search.data = {
       parent: '"candles/openingMarabozu"'
     },
     {
-      id: 101,
+      id: 141,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_openingmarabozu_.openingmarabozu.options.html",
@@ -813,7 +1131,7 @@ typedoc.search.data = {
       parent: '"candles/openingMarabozu".OpeningMarabozu'
     },
     {
-      id: 102,
+      id: 142,
       kind: 1024,
       name: "precision",
       url:
@@ -822,7 +1140,7 @@ typedoc.search.data = {
       parent: '"candles/openingMarabozu".OpeningMarabozu.Options'
     },
     {
-      id: 103,
+      id: 143,
       kind: 64,
       name: "test",
       url: "modules/_candles_openingmarabozu_.openingmarabozu.html#test",
@@ -830,7 +1148,7 @@ typedoc.search.data = {
       parent: '"candles/openingMarabozu".OpeningMarabozu'
     },
     {
-      id: 104,
+      id: 144,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_openingmarabozu_.openingmarabozu.html#defaults",
@@ -838,7 +1156,7 @@ typedoc.search.data = {
       parent: '"candles/openingMarabozu".OpeningMarabozu'
     },
     {
-      id: 105,
+      id: 145,
       kind: 32,
       name: "precision",
       url:
@@ -847,14 +1165,14 @@ typedoc.search.data = {
       parent: '"candles/openingMarabozu".OpeningMarabozu.defaults'
     },
     {
-      id: 106,
+      id: 146,
       kind: 1,
       name: '"candles/closingMarabozu"',
       url: "modules/_candles_closingmarabozu_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 107,
+      id: 147,
       kind: 2,
       name: "ClosingMarabozu",
       url: "modules/_candles_closingmarabozu_.closingmarabozu.html",
@@ -862,7 +1180,7 @@ typedoc.search.data = {
       parent: '"candles/closingMarabozu"'
     },
     {
-      id: 108,
+      id: 148,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_closingmarabozu_.closingmarabozu.options.html",
@@ -870,7 +1188,7 @@ typedoc.search.data = {
       parent: '"candles/closingMarabozu".ClosingMarabozu'
     },
     {
-      id: 109,
+      id: 149,
       kind: 1024,
       name: "precision",
       url:
@@ -879,7 +1197,7 @@ typedoc.search.data = {
       parent: '"candles/closingMarabozu".ClosingMarabozu.Options'
     },
     {
-      id: 110,
+      id: 150,
       kind: 64,
       name: "test",
       url: "modules/_candles_closingmarabozu_.closingmarabozu.html#test",
@@ -887,7 +1205,7 @@ typedoc.search.data = {
       parent: '"candles/closingMarabozu".ClosingMarabozu'
     },
     {
-      id: 111,
+      id: 151,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_closingmarabozu_.closingmarabozu.html#defaults",
@@ -895,7 +1213,7 @@ typedoc.search.data = {
       parent: '"candles/closingMarabozu".ClosingMarabozu'
     },
     {
-      id: 112,
+      id: 152,
       kind: 32,
       name: "precision",
       url:
@@ -904,14 +1222,14 @@ typedoc.search.data = {
       parent: '"candles/closingMarabozu".ClosingMarabozu.defaults'
     },
     {
-      id: 113,
+      id: 153,
       kind: 1,
       name: '"candles/invertedHammer"',
       url: "modules/_candles_invertedhammer_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 114,
+      id: 154,
       kind: 2,
       name: "InvertedHammer",
       url: "modules/_candles_invertedhammer_.invertedhammer.html",
@@ -919,7 +1237,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer"'
     },
     {
-      id: 115,
+      id: 155,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_invertedhammer_.invertedhammer.options.html",
@@ -927,7 +1245,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer'
     },
     {
-      id: 116,
+      id: 156,
       kind: 1024,
       name: "gap",
       url:
@@ -936,7 +1254,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer.Options'
     },
     {
-      id: 117,
+      id: 157,
       kind: 1024,
       name: "ratio",
       url:
@@ -945,7 +1263,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer.Options'
     },
     {
-      id: 118,
+      id: 158,
       kind: 1024,
       name: "precision",
       url:
@@ -954,7 +1272,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer.Options'
     },
     {
-      id: 119,
+      id: 159,
       kind: 64,
       name: "test",
       url: "modules/_candles_invertedhammer_.invertedhammer.html#test",
@@ -962,7 +1280,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer'
     },
     {
-      id: 120,
+      id: 160,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_invertedhammer_.invertedhammer.html#defaults",
@@ -970,7 +1288,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer'
     },
     {
-      id: 121,
+      id: 161,
       kind: 32,
       name: "gap",
       url: "modules/_candles_invertedhammer_.invertedhammer.html#defaults.gap",
@@ -978,7 +1296,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer.defaults'
     },
     {
-      id: 122,
+      id: 162,
       kind: 32,
       name: "ratio",
       url:
@@ -987,7 +1305,7 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer.defaults'
     },
     {
-      id: 123,
+      id: 163,
       kind: 32,
       name: "precision",
       url:
@@ -996,14 +1314,14 @@ typedoc.search.data = {
       parent: '"candles/invertedHammer".InvertedHammer.defaults'
     },
     {
-      id: 124,
+      id: 164,
       kind: 1,
       name: '"candles/shootingStar"',
       url: "modules/_candles_shootingstar_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 125,
+      id: 165,
       kind: 2,
       name: "ShootingStar",
       url: "modules/_candles_shootingstar_.shootingstar.html",
@@ -1011,7 +1329,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar"'
     },
     {
-      id: 126,
+      id: 166,
       kind: 256,
       name: "Options",
       url: "interfaces/_candles_shootingstar_.shootingstar.options.html",
@@ -1019,7 +1337,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar'
     },
     {
-      id: 127,
+      id: 167,
       kind: 1024,
       name: "gap",
       url: "interfaces/_candles_shootingstar_.shootingstar.options.html#gap",
@@ -1027,7 +1345,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar.Options'
     },
     {
-      id: 128,
+      id: 168,
       kind: 1024,
       name: "ratio",
       url: "interfaces/_candles_shootingstar_.shootingstar.options.html#ratio",
@@ -1035,7 +1353,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar.Options'
     },
     {
-      id: 129,
+      id: 169,
       kind: 1024,
       name: "precision",
       url:
@@ -1044,7 +1362,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar.Options'
     },
     {
-      id: 130,
+      id: 170,
       kind: 64,
       name: "test",
       url: "modules/_candles_shootingstar_.shootingstar.html#test",
@@ -1052,7 +1370,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar'
     },
     {
-      id: 131,
+      id: 171,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_shootingstar_.shootingstar.html#defaults",
@@ -1060,7 +1378,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar'
     },
     {
-      id: 132,
+      id: 172,
       kind: 32,
       name: "gap",
       url: "modules/_candles_shootingstar_.shootingstar.html#defaults.gap",
@@ -1068,7 +1386,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar.defaults'
     },
     {
-      id: 133,
+      id: 173,
       kind: 32,
       name: "ratio",
       url: "modules/_candles_shootingstar_.shootingstar.html#defaults.ratio",
@@ -1076,7 +1394,7 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar.defaults'
     },
     {
-      id: 134,
+      id: 174,
       kind: 32,
       name: "precision",
       url:
@@ -1085,14 +1403,14 @@ typedoc.search.data = {
       parent: '"candles/shootingStar".ShootingStar.defaults'
     },
     {
-      id: 135,
+      id: 175,
       kind: 1,
       name: '"candles/piercingLine"',
       url: "modules/_candles_piercingline_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 136,
+      id: 176,
       kind: 2,
       name: "PiercingLine",
       url: "modules/_candles_piercingline_.piercingline.html",
@@ -1100,7 +1418,7 @@ typedoc.search.data = {
       parent: '"candles/piercingLine"'
     },
     {
-      id: 137,
+      id: 177,
       kind: 64,
       name: "test",
       url: "modules/_candles_piercingline_.piercingline.html#test",
@@ -1108,14 +1426,30 @@ typedoc.search.data = {
       parent: '"candles/piercingLine".PiercingLine'
     },
     {
-      id: 138,
+      id: 178,
+      kind: 4194304,
+      name: "Options",
+      url: "modules/_candles_piercingline_.piercingline.html#options",
+      classes: "tsd-kind-type-alias tsd-parent-kind-module",
+      parent: '"candles/piercingLine".PiercingLine'
+    },
+    {
+      id: 179,
+      kind: 32,
+      name: "defaults",
+      url: "modules/_candles_piercingline_.piercingline.html#defaults",
+      classes: "tsd-kind-variable tsd-parent-kind-module",
+      parent: '"candles/piercingLine".PiercingLine'
+    },
+    {
+      id: 180,
       kind: 1,
       name: '"candles/darkCloudCover"',
       url: "modules/_candles_darkcloudcover_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 139,
+      id: 181,
       kind: 2,
       name: "DarkCloudCover",
       url: "modules/_candles_darkcloudcover_.darkcloudcover.html",
@@ -1123,7 +1457,7 @@ typedoc.search.data = {
       parent: '"candles/darkCloudCover"'
     },
     {
-      id: 140,
+      id: 182,
       kind: 64,
       name: "test",
       url: "modules/_candles_darkcloudcover_.darkcloudcover.html#test",
@@ -1131,178 +1465,14 @@ typedoc.search.data = {
       parent: '"candles/darkCloudCover".DarkCloudCover'
     },
     {
-      id: 141,
-      kind: 1,
-      name: '"indicators/simpleMovingAverage"',
-      url: "modules/_indicators_simplemovingaverage_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 142,
-      kind: 64,
-      name: "simpleMovingAverage",
-      url: "modules/_indicators_simplemovingaverage_.html#simplemovingaverage",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"indicators/simpleMovingAverage"'
-    },
-    {
-      id: 143,
-      kind: 1,
-      name: '"indicators/index"',
-      url: "modules/_indicators_index_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 144,
-      kind: 1,
-      name: '"candles/longDay"',
-      url: "modules/_candles_longday_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 145,
-      kind: 2,
-      name: "LongDay",
-      url: "modules/_candles_longday_.longday.html",
-      classes: "tsd-kind-module tsd-parent-kind-external-module",
-      parent: '"candles/longDay"'
-    },
-    {
-      id: 146,
-      kind: 256,
-      name: "Options",
-      url: "interfaces/_candles_longday_.longday.options.html",
-      classes: "tsd-kind-interface tsd-parent-kind-module",
-      parent: '"candles/longDay".LongDay'
-    },
-    {
-      id: 147,
-      kind: 1024,
-      name: "noOfCandles",
-      url: "interfaces/_candles_longday_.longday.options.html#noofcandles",
-      classes: "tsd-kind-property tsd-parent-kind-interface",
-      parent: '"candles/longDay".LongDay.Options'
-    },
-    {
-      id: 148,
-      kind: 1024,
-      name: "ratio",
-      url: "interfaces/_candles_longday_.longday.options.html#ratio",
-      classes: "tsd-kind-property tsd-parent-kind-interface",
-      parent: '"candles/longDay".LongDay.Options'
-    },
-    {
-      id: 149,
-      kind: 64,
-      name: "test",
-      url: "modules/_candles_longday_.longday.html#test",
-      classes: "tsd-kind-function tsd-parent-kind-module",
-      parent: '"candles/longDay".LongDay'
-    },
-    {
-      id: 150,
-      kind: 2097152,
-      name: "defaults",
-      url: "modules/_candles_longday_.longday.html#defaults",
-      classes: "tsd-kind-object-literal tsd-parent-kind-module",
-      parent: '"candles/longDay".LongDay'
-    },
-    {
-      id: 151,
-      kind: 32,
-      name: "noOfCandles",
-      url: "modules/_candles_longday_.longday.html#defaults.noofcandles",
-      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
-      parent: '"candles/longDay".LongDay.defaults'
-    },
-    {
-      id: 152,
-      kind: 32,
-      name: "ratio",
-      url: "modules/_candles_longday_.longday.html#defaults.ratio",
-      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
-      parent: '"candles/longDay".LongDay.defaults'
-    },
-    {
-      id: 153,
-      kind: 1,
-      name: '"candles/shortDay"',
-      url: "modules/_candles_shortday_.html",
-      classes: "tsd-kind-external-module"
-    },
-    {
-      id: 154,
-      kind: 2,
-      name: "ShortDay",
-      url: "modules/_candles_shortday_.shortday.html",
-      classes: "tsd-kind-module tsd-parent-kind-external-module",
-      parent: '"candles/shortDay"'
-    },
-    {
-      id: 155,
-      kind: 256,
-      name: "Options",
-      url: "interfaces/_candles_shortday_.shortday.options.html",
-      classes: "tsd-kind-interface tsd-parent-kind-module",
-      parent: '"candles/shortDay".ShortDay'
-    },
-    {
-      id: 156,
-      kind: 1024,
-      name: "noOfCandles",
-      url: "interfaces/_candles_shortday_.shortday.options.html#noofcandles",
-      classes: "tsd-kind-property tsd-parent-kind-interface",
-      parent: '"candles/shortDay".ShortDay.Options'
-    },
-    {
-      id: 157,
-      kind: 1024,
-      name: "ratio",
-      url: "interfaces/_candles_shortday_.shortday.options.html#ratio",
-      classes: "tsd-kind-property tsd-parent-kind-interface",
-      parent: '"candles/shortDay".ShortDay.Options'
-    },
-    {
-      id: 158,
-      kind: 64,
-      name: "test",
-      url: "modules/_candles_shortday_.shortday.html#test",
-      classes: "tsd-kind-function tsd-parent-kind-module",
-      parent: '"candles/shortDay".ShortDay'
-    },
-    {
-      id: 159,
-      kind: 2097152,
-      name: "defaults",
-      url: "modules/_candles_shortday_.shortday.html#defaults",
-      classes: "tsd-kind-object-literal tsd-parent-kind-module",
-      parent: '"candles/shortDay".ShortDay'
-    },
-    {
-      id: 160,
-      kind: 32,
-      name: "noOfCandles",
-      url: "modules/_candles_shortday_.shortday.html#defaults.noofcandles",
-      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
-      parent: '"candles/shortDay".ShortDay.defaults'
-    },
-    {
-      id: 161,
-      kind: 32,
-      name: "ratio",
-      url: "modules/_candles_shortday_.shortday.html#defaults.ratio",
-      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
-      parent: '"candles/shortDay".ShortDay.defaults'
-    },
-    {
-      id: 162,
+      id: 183,
       kind: 1,
       name: '"candles/meetingLines"',
       url: "modules/_candles_meetinglines_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 163,
+      id: 184,
       kind: 2,
       name: "MeetingLines",
       url: "modules/_candles_meetinglines_.meetinglines.html",
@@ -1310,7 +1480,33 @@ typedoc.search.data = {
       parent: '"candles/meetingLines"'
     },
     {
-      id: 164,
+      id: 185,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_meetinglines_.meetinglines.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/meetingLines".MeetingLines'
+    },
+    {
+      id: 186,
+      kind: 1024,
+      name: "longDay",
+      url:
+        "interfaces/_candles_meetinglines_.meetinglines.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/meetingLines".MeetingLines.Options'
+    },
+    {
+      id: 187,
+      kind: 1024,
+      name: "precision",
+      url:
+        "interfaces/_candles_meetinglines_.meetinglines.options.html#precision",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/meetingLines".MeetingLines.Options'
+    },
+    {
+      id: 188,
       kind: 64,
       name: "test",
       url: "modules/_candles_meetinglines_.meetinglines.html#test",
@@ -1318,15 +1514,7 @@ typedoc.search.data = {
       parent: '"candles/meetingLines".MeetingLines'
     },
     {
-      id: 165,
-      kind: 4194304,
-      name: "Options",
-      url: "modules/_candles_meetinglines_.meetinglines.html#options",
-      classes: "tsd-kind-type-alias tsd-parent-kind-module",
-      parent: '"candles/meetingLines".MeetingLines'
-    },
-    {
-      id: 166,
+      id: 189,
       kind: 2097152,
       name: "defaults",
       url: "modules/_candles_meetinglines_.meetinglines.html#defaults",
@@ -1334,7 +1522,7 @@ typedoc.search.data = {
       parent: '"candles/meetingLines".MeetingLines'
     },
     {
-      id: 167,
+      id: 190,
       kind: 32,
       name: "precision",
       url:
@@ -1343,21 +1531,519 @@ typedoc.search.data = {
       parent: '"candles/meetingLines".MeetingLines.defaults'
     },
     {
-      id: 168,
+      id: 191,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_meetinglines_.meetinglines.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/meetingLines".MeetingLines.defaults'
+    },
+    {
+      id: 192,
+      kind: 1,
+      name: '"candles/homingPigeon"',
+      url: "modules/_candles_homingpigeon_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 193,
+      kind: 2,
+      name: "HomingPigeon",
+      url: "modules/_candles_homingpigeon_.homingpigeon.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/homingPigeon"'
+    },
+    {
+      id: 194,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_homingpigeon_.homingpigeon.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/homingPigeon".HomingPigeon'
+    },
+    {
+      id: 195,
+      kind: 1024,
+      name: "longDay",
+      url:
+        "interfaces/_candles_homingpigeon_.homingpigeon.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/homingPigeon".HomingPigeon.Options'
+    },
+    {
+      id: 196,
+      kind: 1024,
+      name: "shortDay",
+      url:
+        "interfaces/_candles_homingpigeon_.homingpigeon.options.html#shortday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/homingPigeon".HomingPigeon.Options'
+    },
+    {
+      id: 197,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_homingpigeon_.homingpigeon.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/homingPigeon".HomingPigeon'
+    },
+    {
+      id: 198,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_homingpigeon_.homingpigeon.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/homingPigeon".HomingPigeon'
+    },
+    {
+      id: 199,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_homingpigeon_.homingpigeon.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/homingPigeon".HomingPigeon.defaults'
+    },
+    {
+      id: 200,
+      kind: 32,
+      name: "shortDay",
+      url: "modules/_candles_homingpigeon_.homingpigeon.html#defaults.shortday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/homingPigeon".HomingPigeon.defaults'
+    },
+    {
+      id: 201,
+      kind: 1,
+      name: '"candles/descendingHawk"',
+      url: "modules/_candles_descendinghawk_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 202,
+      kind: 2,
+      name: "DescendingHawk",
+      url: "modules/_candles_descendinghawk_.descendinghawk.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/descendingHawk"'
+    },
+    {
+      id: 203,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_descendinghawk_.descendinghawk.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/descendingHawk".DescendingHawk'
+    },
+    {
+      id: 204,
+      kind: 1024,
+      name: "longDay",
+      url:
+        "interfaces/_candles_descendinghawk_.descendinghawk.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/descendingHawk".DescendingHawk.Options'
+    },
+    {
+      id: 205,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_descendinghawk_.descendinghawk.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/descendingHawk".DescendingHawk'
+    },
+    {
+      id: 206,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_descendinghawk_.descendinghawk.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/descendingHawk".DescendingHawk'
+    },
+    {
+      id: 207,
+      kind: 32,
+      name: "longDay",
+      url:
+        "modules/_candles_descendinghawk_.descendinghawk.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/descendingHawk".DescendingHawk.defaults'
+    },
+    {
+      id: 208,
+      kind: 1,
+      name: '"candles/matchingLow"',
+      url: "modules/_candles_matchinglow_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 209,
+      kind: 2,
+      name: "MatchingLow",
+      url: "modules/_candles_matchinglow_.matchinglow.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/matchingLow"'
+    },
+    {
+      id: 210,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_matchinglow_.matchinglow.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/matchingLow".MatchingLow'
+    },
+    {
+      id: 211,
+      kind: 1024,
+      name: "longDay",
+      url: "interfaces/_candles_matchinglow_.matchinglow.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/matchingLow".MatchingLow.Options'
+    },
+    {
+      id: 212,
+      kind: 1024,
+      name: "precision",
+      url:
+        "interfaces/_candles_matchinglow_.matchinglow.options.html#precision",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/matchingLow".MatchingLow.Options'
+    },
+    {
+      id: 213,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_matchinglow_.matchinglow.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/matchingLow".MatchingLow'
+    },
+    {
+      id: 214,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_matchinglow_.matchinglow.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/matchingLow".MatchingLow'
+    },
+    {
+      id: 215,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_matchinglow_.matchinglow.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/matchingLow".MatchingLow.defaults'
+    },
+    {
+      id: 216,
+      kind: 32,
+      name: "precision",
+      url: "modules/_candles_matchinglow_.matchinglow.html#defaults.precision",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/matchingLow".MatchingLow.defaults'
+    },
+    {
+      id: 217,
+      kind: 1,
+      name: '"candles/matchingHigh"',
+      url: "modules/_candles_matchinghigh_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 218,
+      kind: 2,
+      name: "MatchingHigh",
+      url: "modules/_candles_matchinghigh_.matchinghigh.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/matchingHigh"'
+    },
+    {
+      id: 219,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_matchinghigh_.matchinghigh.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/matchingHigh".MatchingHigh'
+    },
+    {
+      id: 220,
+      kind: 1024,
+      name: "longDay",
+      url:
+        "interfaces/_candles_matchinghigh_.matchinghigh.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/matchingHigh".MatchingHigh.Options'
+    },
+    {
+      id: 221,
+      kind: 1024,
+      name: "precision",
+      url:
+        "interfaces/_candles_matchinghigh_.matchinghigh.options.html#precision",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/matchingHigh".MatchingHigh.Options'
+    },
+    {
+      id: 222,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_matchinghigh_.matchinghigh.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/matchingHigh".MatchingHigh'
+    },
+    {
+      id: 223,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_matchinghigh_.matchinghigh.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/matchingHigh".MatchingHigh'
+    },
+    {
+      id: 224,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_matchinghigh_.matchinghigh.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/matchingHigh".MatchingHigh.defaults'
+    },
+    {
+      id: 225,
+      kind: 32,
+      name: "precision",
+      url:
+        "modules/_candles_matchinghigh_.matchinghigh.html#defaults.precision",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/matchingHigh".MatchingHigh.defaults'
+    },
+    {
+      id: 226,
+      kind: 1,
+      name: '"candles/kicking"',
+      url: "modules/_candles_kicking_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 227,
+      kind: 2,
+      name: "Kicking",
+      url: "modules/_candles_kicking_.kicking.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/kicking"'
+    },
+    {
+      id: 228,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_kicking_.kicking.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/kicking".Kicking'
+    },
+    {
+      id: 229,
+      kind: 1024,
+      name: "marabozu",
+      url: "interfaces/_candles_kicking_.kicking.options.html#marabozu",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/kicking".Kicking.Options'
+    },
+    {
+      id: 230,
+      kind: 1024,
+      name: "gap",
+      url: "interfaces/_candles_kicking_.kicking.options.html#gap",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/kicking".Kicking.Options'
+    },
+    {
+      id: 231,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_kicking_.kicking.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/kicking".Kicking'
+    },
+    {
+      id: 232,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_kicking_.kicking.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/kicking".Kicking'
+    },
+    {
+      id: 233,
+      kind: 32,
+      name: "marabozu",
+      url: "modules/_candles_kicking_.kicking.html#defaults.marabozu",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/kicking".Kicking.defaults'
+    },
+    {
+      id: 234,
+      kind: 32,
+      name: "gap",
+      url: "modules/_candles_kicking_.kicking.html#defaults.gap",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/kicking".Kicking.defaults'
+    },
+    {
+      id: 235,
+      kind: 1,
+      name: '"candles/whiteSoldier"',
+      url: "modules/_candles_whitesoldier_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 236,
+      kind: 2,
+      name: "WhiteSoldier",
+      url: "modules/_candles_whitesoldier_.whitesoldier.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/whiteSoldier"'
+    },
+    {
+      id: 237,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_whitesoldier_.whitesoldier.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/whiteSoldier".WhiteSoldier'
+    },
+    {
+      id: 238,
+      kind: 1024,
+      name: "longDay",
+      url:
+        "interfaces/_candles_whitesoldier_.whitesoldier.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/whiteSoldier".WhiteSoldier.Options'
+    },
+    {
+      id: 239,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_whitesoldier_.whitesoldier.options.html#ratio",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/whiteSoldier".WhiteSoldier.Options'
+    },
+    {
+      id: 240,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_whitesoldier_.whitesoldier.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/whiteSoldier".WhiteSoldier'
+    },
+    {
+      id: 241,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_whitesoldier_.whitesoldier.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/whiteSoldier".WhiteSoldier'
+    },
+    {
+      id: 242,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_whitesoldier_.whitesoldier.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/whiteSoldier".WhiteSoldier.defaults'
+    },
+    {
+      id: 243,
+      kind: 32,
+      name: "ratio",
+      url: "modules/_candles_whitesoldier_.whitesoldier.html#defaults.ratio",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/whiteSoldier".WhiteSoldier.defaults'
+    },
+    {
+      id: 244,
+      kind: 1,
+      name: '"candles/blackCrow"',
+      url: "modules/_candles_blackcrow_.html",
+      classes: "tsd-kind-external-module"
+    },
+    {
+      id: 245,
+      kind: 2,
+      name: "BlackCrow",
+      url: "modules/_candles_blackcrow_.blackcrow.html",
+      classes: "tsd-kind-module tsd-parent-kind-external-module",
+      parent: '"candles/blackCrow"'
+    },
+    {
+      id: 246,
+      kind: 256,
+      name: "Options",
+      url: "interfaces/_candles_blackcrow_.blackcrow.options.html",
+      classes: "tsd-kind-interface tsd-parent-kind-module",
+      parent: '"candles/blackCrow".BlackCrow'
+    },
+    {
+      id: 247,
+      kind: 1024,
+      name: "longDay",
+      url: "interfaces/_candles_blackcrow_.blackcrow.options.html#longday",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/blackCrow".BlackCrow.Options'
+    },
+    {
+      id: 248,
+      kind: 1024,
+      name: "ratio",
+      url: "interfaces/_candles_blackcrow_.blackcrow.options.html#ratio",
+      classes: "tsd-kind-property tsd-parent-kind-interface",
+      parent: '"candles/blackCrow".BlackCrow.Options'
+    },
+    {
+      id: 249,
+      kind: 64,
+      name: "test",
+      url: "modules/_candles_blackcrow_.blackcrow.html#test",
+      classes: "tsd-kind-function tsd-parent-kind-module",
+      parent: '"candles/blackCrow".BlackCrow'
+    },
+    {
+      id: 250,
+      kind: 2097152,
+      name: "defaults",
+      url: "modules/_candles_blackcrow_.blackcrow.html#defaults",
+      classes: "tsd-kind-object-literal tsd-parent-kind-module",
+      parent: '"candles/blackCrow".BlackCrow'
+    },
+    {
+      id: 251,
+      kind: 32,
+      name: "longDay",
+      url: "modules/_candles_blackcrow_.blackcrow.html#defaults.longday",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/blackCrow".BlackCrow.defaults'
+    },
+    {
+      id: 252,
+      kind: 32,
+      name: "ratio",
+      url: "modules/_candles_blackcrow_.blackcrow.html#defaults.ratio",
+      classes: "tsd-kind-variable tsd-parent-kind-object-literal",
+      parent: '"candles/blackCrow".BlackCrow.defaults'
+    },
+    {
+      id: 253,
       kind: 1,
       name: '"candles/index"',
       url: "modules/_candles_index_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 169,
+      id: 254,
       kind: 1,
       name: '"index"',
       url: "modules/_index_.html",
       classes: "tsd-kind-external-module"
     },
     {
-      id: 170,
+      id: 255,
       kind: 1,
       name: '"samples"',
       url: "modules/_samples_.html",
