@@ -1,6 +1,8 @@
 import { Candle, bearish, bullish, lower, upper } from "../candle";
 import { Trend, up, down } from "../trend";
 import { Doji } from "./doji";
+import { LongDay } from "./longDay";
+
 export namespace DojiStar {
   /**
    * Tests whether the given candle matches the pattern: Doji Star
@@ -30,29 +32,34 @@ export namespace DojiStar {
     offset: number = 0,
     options: Options = defaults
   ): boolean {
-    const long = candles[offset];
-    const doji = candles[offset + 1];
-    const range =
-      (long.high - long.low) / (doji.high - doji.low) >= options.ratio;
-    if (up(trend)) {
-      return (
-        range &&
-        bullish(long) &&
-        Doji.test(candles, trend, offset + 1, options) &&
-        Math.abs(lower(doji) - long.close) >= options.gap
-      );
-    } else if (down(trend)) {
-      return (
-        range &&
-        bearish(long) &&
-        Doji.test(candles, trend, offset + 1, options) &&
-        Math.abs(long.close - upper(doji)) >= options.gap
-      );
+    if (
+      LongDay.test(candles, trend, offset, options.longDay) &&
+      Doji.test(candles, trend, offset + 1, options.doji)
+    ) {
+      const long = candles[offset];
+      const doji = candles[offset + 1];
+      const range =
+        (long.high - long.low) / (doji.high - doji.low) >= options.ratio;
+      if (up(trend)) {
+        return (
+          range &&
+          bullish(long) &&
+          Math.abs(lower(doji) - long.close) >= options.gap
+        );
+      } else if (down(trend)) {
+        return (
+          range &&
+          bearish(long) &&
+          Math.abs(long.close - upper(doji)) >= options.gap
+        );
+      }
     }
     return false;
   }
 
-  export type Options = Doji.Options & {
+  export interface Options {
+    doji: Doji.Options;
+    longDay: LongDay.Options;
     /**
      *  Minimum gap between bodies of both candles
      */
@@ -61,6 +68,11 @@ export namespace DojiStar {
      * Ratio between range of first candle and range of second candle. E.g. a ratio of 2 means that the range of the first candle needs to be at least twice as long as the rage of the second candle.
      */
     ratio: number;
+  }
+  export const defaults: Options = {
+    gap: 1,
+    ratio: 2,
+    doji: Doji.defaults,
+    longDay: LongDay.defaults
   };
-  export const defaults: Options = { gap: 1, ratio: 2, ...Doji.defaults };
 }

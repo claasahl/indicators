@@ -34,8 +34,8 @@ export namespace MeetingLines {
     const first = candles[offset];
     const second = candles[offset + 1];
     const longs =
-      LongDay.test(candles, trend, offset, options) &&
-      LongDay.test(candles, trend, offset + 1, options);
+      LongDay.test(candles, trend, offset, options.longDay) &&
+      LongDay.test(candles, trend, offset + 1, options.longDay);
     if (longs && up(trend)) {
       return (
         bullish(first) &&
@@ -52,15 +52,16 @@ export namespace MeetingLines {
     return false;
   }
 
-  export type Options = LongDay.Options & {
+  export interface Options {
+    longDay: LongDay.Options;
     /**
      * The maximum distance between the closing prices.
      */
     precision: number;
-  };
+  }
 
   export const defaults: Options = {
     precision: 0,
-    ...LongDay.defaults
+    longDay: LongDay.defaults
   };
 }

@@ -1,5 +1,6 @@
 import { Candle, body, bearish, bullish } from "../candle";
 import { Trend, down } from "../trend";
+import { LongDay } from "./longDay";
 export namespace PiercingLine {
   /**
    * Tests whether the given candle matches the pattern: Piercing Line
@@ -19,21 +20,29 @@ export namespace PiercingLine {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
+   * @param options configurable options for this pattern
    */
   export function test(
     candles: Candle[],
     trend: Trend = "down",
-    offset: number = 0
+    offset: number = 0,
+    options: Options = defaults
   ): boolean {
-    const first = candles[offset];
-    const second = candles[offset + 1];
-    return (
-      down(trend) &&
-      bearish(first) &&
-      bullish(second) &&
-      second.open < first.low &&
-      second.close >= first.close + body(first) / 2 &&
-      second.close <= first.open
-    );
+    if (LongDay.test(candles, trend, offset, options)) {
+      const first = candles[offset];
+      const second = candles[offset + 1];
+      return (
+        down(trend) &&
+        bearish(first) &&
+        bullish(second) &&
+        second.open < first.low &&
+        second.close >= first.close + body(first) / 2 &&
+        second.close <= first.open
+      );
+    }
+    return false;
   }
+
+  export type Options = LongDay.Options;
+  export const defaults: Options = LongDay.defaults;
 }

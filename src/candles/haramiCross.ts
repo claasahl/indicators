@@ -1,6 +1,7 @@
 import { Candle, bullish, bearish, upper, lower } from "../candle";
 import { Trend, up, down } from "../trend";
 import { Doji } from "./doji";
+import { LongDay } from "./longDay";
 export namespace HaramiCross {
   /**
    * Tests whether the given candle matches the pattern: Harami Cross
@@ -29,12 +30,17 @@ export namespace HaramiCross {
     offset: number = 0,
     options: Options = defaults
   ) {
-    const long = candles[offset];
-    const short = candles[offset + 1];
-    const bull = up(trend) && bullish(long);
-    const bear = down(trend) && bearish(long);
-    const doji = Doji.test(candles, trend, offset + 1, options);
-    return (bull || bear) && engulfed(short, long) && doji;
+    if (
+      LongDay.test(candles, trend, offset, options.longDay) &&
+      Doji.test(candles, trend, offset + 1, options.doji)
+    ) {
+      const long = candles[offset];
+      const short = candles[offset + 1];
+      const bull = up(trend) && bullish(long);
+      const bear = down(trend) && bearish(long);
+      return (bull || bear) && engulfed(short, long);
+    }
+    return false;
   }
 
   function engulfed(candleA: Candle, candleB: Candle): boolean {
@@ -48,6 +54,12 @@ export namespace HaramiCross {
     );
   }
 
-  export type Options = Doji.Options;
-  export const defaults: Options = Doji.defaults;
+  export interface Options {
+    doji: Doji.Options;
+    longDay: LongDay.Options;
+  }
+  export const defaults: Options = {
+    doji: Doji.defaults,
+    longDay: LongDay.defaults
+  };
 }

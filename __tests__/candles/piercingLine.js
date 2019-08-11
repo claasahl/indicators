@@ -13,6 +13,36 @@ describe("Piercing Line", () => {
   test("matching set of candles", () => {
     const candles = [
       {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
         open: 80,
         high: 85,
         low: 40,
@@ -25,10 +55,40 @@ describe("Piercing Line", () => {
         close: 63
       }
     ];
-    expect(pattern(candles)).toBe(true);
+    expect(pattern(candles, "down", 5)).toBe(true);
   });
   test("no matching set of candles", () => {
     const candles = [
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
       {
         open: 80,
         high: 85,
@@ -42,6 +102,6 @@ describe("Piercing Line", () => {
         close: 62
       }
     ];
-    expect(pattern(candles)).toBe(false);
+    expect(pattern(candles, "down", 5)).toBe(false);
   });
 });

@@ -18,6 +18,36 @@ describe("Harami", () => {
   test("matching set of candles", () => {
     const candles = [
       {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
         open: 65,
         high: 90,
         low: 30,
@@ -27,14 +57,44 @@ describe("Harami", () => {
         open: 40,
         high: 80,
         low: 30,
-        close: 60
+        close: 45
       }
     ];
-    expect(pattern(candles, "down")).toBe(true);
+    expect(pattern(candles, "down", 5)).toBe(true);
   });
   test("no matching set of candles", () => {
     const candles = [
       {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
+        open: 20,
+        high: 60,
+        low: 10,
+        close: 30
+      },
+      {
         open: 65,
         high: 90,
         low: 30,
@@ -47,6 +107,6 @@ describe("Harami", () => {
         close: 60
       }
     ];
-    expect(pattern(candles, "up")).toBe(false);
+    expect(pattern(candles, "up", 5)).toBe(false);
   });
 });

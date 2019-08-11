@@ -1,5 +1,8 @@
 import { Candle, bullish, bearish, upper, lower } from "../candle";
 import { Trend, up, down } from "../trend";
+import { LongDay } from "./longDay";
+import { ShortDay } from "./shortDay";
+
 export namespace Harami {
   /**
    * Tests whether the given candle matches the pattern: Harami
@@ -21,13 +24,25 @@ export namespace Harami {
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured
    * @param offset offset to earliest / first candle
+   * @param options configurable options for this pattern
    */
-  export function test(candles: Candle[], trend: Trend, offset: number = 0) {
-    const long = candles[offset];
-    const short = candles[offset + 1];
-    const bull = up(trend) && bullish(long) && bearish(short);
-    const bear = down(trend) && bearish(long) && bullish(short);
-    return (bull || bear) && engulfed(short, long);
+  export function test(
+    candles: Candle[],
+    trend: Trend,
+    offset: number = 0,
+    options: Options = defaults
+  ) {
+    if (
+      LongDay.test(candles, trend, offset, options.longDay) &&
+      ShortDay.test(candles, trend, offset + 1, options.shortDay)
+    ) {
+      const long = candles[offset];
+      const short = candles[offset + 1];
+      const bull = up(trend) && bullish(long) && bearish(short);
+      const bear = down(trend) && bearish(long) && bullish(short);
+      return (bull || bear) && engulfed(short, long);
+    }
+    return false;
   }
 
   function engulfed(candleA: Candle, candleB: Candle): boolean {
@@ -40,4 +55,13 @@ export namespace Harami {
       (upperA < upperB && lowerA >= lowerB)
     );
   }
+
+  export interface Options {
+    longDay: LongDay.Options;
+    shortDay: ShortDay.Options;
+  }
+  export const defaults: Options = {
+    longDay: LongDay.defaults,
+    shortDay: ShortDay.defaults
+  };
 }

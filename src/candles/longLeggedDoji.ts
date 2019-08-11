@@ -26,17 +26,18 @@ export namespace LongLeggedDoji {
     offset: number = 0,
     options: Options = defaults
   ) {
-    const { precision2 } = options;
+    const { precision } = options;
     const candle = candles[offset];
-    const doji = Doji.test(candles, trend, offset, options);
-    return doji && Math.abs(hair(candle) - tail(candle)) <= precision2;
+    const doji = Doji.test(candles, trend, offset, options.doji);
+    return doji && Math.abs(hair(candle) - tail(candle)) <= precision;
   }
 
-  export type Options = Doji.Options & {
+  export interface Options {
+    doji: Doji.Options;
     /**
      * maximum allowed difference between hair and tail
      */
-    precision2: number;
-  };
-  export const defaults: Options = { precision2: 0, ...Doji.defaults };
+    precision: number;
+  }
+  export const defaults: Options = { precision: 0, doji: Doji.defaults };
 }

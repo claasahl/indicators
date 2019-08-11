@@ -20,6 +20,36 @@ describe("Doji Star", () => {
   test("matching set of candles", () => {
     const candles = [
       {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
         open: 70,
         high: 80,
         low: 10,
@@ -32,11 +62,41 @@ describe("Doji Star", () => {
         close: 15
       }
     ];
-    expect(pattern(candles, "down")).toBe(true);
+    expect(pattern(candles, "down", 5)).toBe(true);
   });
   test("no matching set of candles", () => {
     const candles = [
       {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
+        open: 40,
+        high: 60,
+        low: 10,
+        close: 50
+      },
+      {
         open: 70,
         high: 80,
         low: 10,
@@ -49,6 +109,6 @@ describe("Doji Star", () => {
         close: 15
       }
     ];
-    expect(pattern(candles, "up")).toBe(false);
+    expect(pattern(candles, "up", 5)).toBe(false);
   });
 });
