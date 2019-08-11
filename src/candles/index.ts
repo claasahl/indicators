@@ -21,3 +21,5 @@ export * from "./darkCloudCover";
 export * from "./longDay";
 export * from "./shortDay";
 export * from "./meetingLines";
+export * from "./homingPigeon";
+export * from "./descendingHawk";
