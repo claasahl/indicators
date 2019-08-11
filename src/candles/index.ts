@@ -25,3 +25,4 @@ export * from "./homingPigeon";
 export * from "./descendingHawk";
 export * from "./matchingLow";
 export * from "./matchingHigh";
+export * from "./kicking";
