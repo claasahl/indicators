@@ -30,11 +30,16 @@ export namespace Hammer {
   ): boolean {
     const { ratio } = options;
     const candle = candles[offset];
-    return (
-      down(trend) &&
-      tail(candle) > body(candle) * ratio &&
-      hair(candle) < body(candle)
-    );
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (!down(trend)) {
+      return false;
+    }
+    if (hair(candle) >= body(candle)) {
+      return false;
+    }
+    return tail(candle) > body(candle) * ratio;
   }
 
   export interface Options {

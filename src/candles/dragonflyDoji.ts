@@ -27,8 +27,13 @@ export namespace DragonflyDoji {
     options: Options = defaults
   ) {
     const candle = candles[offset];
-    const doji = Doji.test(candles, trend, offset, options);
-    return doji && upper(candle) === candle.high;
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (!Doji.test(candles, trend, offset, options)) {
+      return false;
+    }
+    return upper(candle) === candle.high;
   }
 
   export type Options = Doji.Options;

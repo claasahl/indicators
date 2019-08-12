@@ -30,11 +30,16 @@ export namespace ShootingStar {
   ): boolean {
     const long = candles[offset];
     const star = candles[offset + 1];
-    const gap =
-      bullish(long) && Math.abs(lower(star) - long.close) >= options.gap;
+    if (candles.length <= offset + 1) {
+      return false;
+    }
+    if (!bullish(long) || !up(trend)) {
+      return false;
+    }
+    if (Math.abs(lower(star) - long.close) < options.gap) {
+      return false;
+    }
     return (
-      up(trend) &&
-      gap &&
       hair(star) / body(star) >= options.ratio &&
       tail(star) <= options.precision
     );

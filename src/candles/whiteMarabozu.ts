@@ -28,9 +28,13 @@ export namespace WhiteMarabozu {
     offset: number = 0,
     options: Options = defaults
   ): boolean {
-    return (
-      Marabozu.test(candles, trend, offset, options) && bullish(candles[offset])
-    );
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (!bullish(candles[offset])) {
+      return false;
+    }
+    return Marabozu.test(candles, trend, offset, options);
   }
 
   export type Options = Marabozu.Options;

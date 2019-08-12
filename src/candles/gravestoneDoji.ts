@@ -27,8 +27,13 @@ export namespace GravestoneDoji {
     options: Options = defaults
   ) {
     const candle = candles[offset];
-    const doji = Doji.test(candles, trend, offset, options);
-    return doji && lower(candle) === candle.low;
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (!Doji.test(candles, trend, offset, options)) {
+      return false;
+    }
+    return lower(candle) === candle.low;
   }
 
   export type Options = Doji.Options;

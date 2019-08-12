@@ -32,17 +32,23 @@ export namespace Harami {
     offset: number = 0,
     options: Options = defaults
   ) {
-    if (
-      LongDay.test(candles, trend, offset, options.longDay) &&
-      ShortDay.test(candles, trend, offset + 1, options.shortDay)
-    ) {
-      const long = candles[offset];
-      const short = candles[offset + 1];
-      const bull = up(trend) && bullish(long) && bearish(short);
-      const bear = down(trend) && bearish(long) && bullish(short);
-      return (bull || bear) && engulfed(short, long);
+    const long = candles[offset];
+    const short = candles[offset + 1];
+    if (candles.length <= offset + 1) {
+      return false;
     }
-    return false;
+    if (!LongDay.test(candles, trend, offset, options.longDay)) {
+      return false;
+    }
+    if (!ShortDay.test(candles, trend, offset + 1, options.shortDay)) {
+      return false;
+    }
+    if (!engulfed(short, long)) {
+      return false;
+    }
+    const bull = up(trend) && bullish(long) && bearish(short);
+    const bear = down(trend) && bearish(long) && bullish(short);
+    return bull || bear;
   }
 
   function engulfed(candleA: Candle, candleB: Candle): boolean {

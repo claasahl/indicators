@@ -25,9 +25,15 @@ export namespace Engulfing {
   export function test(candles: Candle[], trend: Trend, offset: number = 0) {
     const short = candles[offset];
     const long = candles[offset + 1];
+    if (candles.length <= offset + 1) {
+      return false;
+    }
+    if (!engulfed(short, long)) {
+      return false;
+    }
     const bull = up(trend) && bullish(short) && bearish(long);
     const bear = down(trend) && bearish(short) && bullish(long);
-    return (bull || bear) && engulfed(short, long);
+    return bull || bear;
   }
 
   function engulfed(candleA: Candle, candleB: Candle): boolean {

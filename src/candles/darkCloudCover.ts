@@ -27,10 +27,13 @@ export namespace DarkCloudCover {
   ): boolean {
     const first = candles[offset];
     const second = candles[offset + 1];
+    if (candles.length <= offset + 1) {
+      return false;
+    }
+    if (!up(trend) || !bullish(first) || !bearish(second)) {
+      return false;
+    }
     return (
-      up(trend) &&
-      bullish(first) &&
-      bearish(second) &&
       second.open > first.high &&
       second.close <= first.open + body(first) / 2 &&
       second.close >= first.open

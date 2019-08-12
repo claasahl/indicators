@@ -28,19 +28,22 @@ export namespace PiercingLine {
     offset: number = 0,
     options: Options = defaults
   ): boolean {
-    if (LongDay.test(candles, trend, offset, options)) {
-      const first = candles[offset];
-      const second = candles[offset + 1];
-      return (
-        down(trend) &&
-        bearish(first) &&
-        bullish(second) &&
-        second.open < first.low &&
-        second.close >= first.close + body(first) / 2 &&
-        second.close <= first.open
-      );
+    const first = candles[offset];
+    const second = candles[offset + 1];
+    if (candles.length <= offset + 1) {
+      return false;
     }
-    return false;
+    if (!LongDay.test(candles, trend, offset, options)) {
+      return false;
+    }
+    if (!down(trend) && bearish(first) && bullish(second)) {
+      return false;
+    }
+    return (
+      second.open < first.low &&
+      second.close >= first.close + body(first) / 2 &&
+      second.close <= first.open
+    );
   }
 
   export type Options = LongDay.Options;

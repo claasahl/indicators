@@ -42,7 +42,6 @@ export namespace HomingPigeon {
     if (!ShortDay.test(candles, trend, offset + 1, options.shortDay)) {
       return false;
     }
-
     return second.open <= first.open && second.close >= first.close;
   }
 

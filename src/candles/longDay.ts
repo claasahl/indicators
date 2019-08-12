@@ -28,6 +28,9 @@ export namespace LongDay {
     offset: number = 0,
     options: Options = defaults
   ): boolean {
+    if (candles.length <= offset) {
+      return false;
+    }
     if (
       offset - options.noOfCandles < 0 ||
       candles.length <= options.noOfCandles

@@ -28,8 +28,13 @@ export namespace LongLeggedDoji {
   ) {
     const { precision } = options;
     const candle = candles[offset];
-    const doji = Doji.test(candles, trend, offset, options.doji);
-    return doji && Math.abs(hair(candle) - tail(candle)) <= precision;
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (!Doji.test(candles, trend, offset, options.doji)) {
+      return false;
+    }
+    return Math.abs(hair(candle) - tail(candle)) <= precision;
   }
 
   export interface Options {

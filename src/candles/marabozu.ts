@@ -28,9 +28,13 @@ export namespace Marabozu {
     const { precision } = options;
     const candle = candles[offset];
     const { high, low } = candle;
-    return (
-      high - upper(candle) <= precision && lower(candle) - low <= precision
-    );
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (high - upper(candle) > precision) {
+      return false;
+    }
+    return lower(candle) - low <= precision;
   }
 
   export interface Options {

@@ -27,6 +27,9 @@ export namespace ClosingMarabozu {
     const { precision } = options;
     const candle = candles[offset];
     const { high, low, close } = candle;
+    if (candles.length <= offset) {
+      return false;
+    }
     if (bullish(candle)) {
       return Math.abs(high - close) <= precision;
     } else if (bearish(candle)) {

@@ -31,15 +31,15 @@ export namespace BeltHold {
   ): boolean {
     const { ratio } = options;
     const candle = candles[offset];
-    const bearish =
-      down(trend) &&
-      candle.open === candle.low &&
-      hair(candle) * ratio < body(candle);
-    const bullish =
-      up(trend) &&
-      candle.open === candle.high &&
-      tail(candle) < body(candle) * ratio;
-    return bearish || bullish;
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (down(trend)) {
+      return candle.open === candle.low && hair(candle) * ratio < body(candle);
+    } else if (up(trend)) {
+      return candle.open === candle.high && tail(candle) < body(candle) * ratio;
+    }
+    return false;
   }
 
   export interface Options {

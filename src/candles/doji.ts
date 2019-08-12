@@ -26,6 +26,9 @@ export namespace Doji {
   ) {
     const { precision } = options;
     const { open, close } = candles[offset];
+    if (candles.length <= offset) {
+      return false;
+    }
     return Math.abs(open - close) <= precision;
   }
 

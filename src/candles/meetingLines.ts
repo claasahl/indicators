@@ -33,21 +33,19 @@ export namespace MeetingLines {
   ): boolean {
     const first = candles[offset];
     const second = candles[offset + 1];
-    const longs =
-      LongDay.test(candles, trend, offset, options.longDay) &&
-      LongDay.test(candles, trend, offset + 1, options.longDay);
-    if (longs && up(trend)) {
-      return (
-        bullish(first) &&
-        bearish(second) &&
-        Math.abs(first.close - second.close) <= options.precision
-      );
-    } else if (longs && down(trend)) {
-      return (
-        bearish(first) &&
-        bullish(second) &&
-        Math.abs(first.close - second.close) <= options.precision
-      );
+    if (candles.length <= offset + 1) {
+      return false;
+    }
+    if (!LongDay.test(candles, trend, offset, options.longDay)) {
+      return false;
+    }
+    if (!LongDay.test(candles, trend, offset + 1, options.longDay)) {
+      return false;
+    }
+    if (up(trend) && bullish(first) && bearish(second)) {
+      return Math.abs(first.close - second.close) <= options.precision;
+    } else if (down(trend) && bearish(first) && bullish(second)) {
+      return Math.abs(first.close - second.close) <= options.precision;
     }
     return false;
   }

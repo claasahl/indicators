@@ -31,11 +31,16 @@ export namespace HangingMan {
   ): boolean {
     const { ratio } = options;
     const candle = candles[offset];
-    return (
-      up(trend) &&
-      tail(candle) > body(candle) * ratio &&
-      hair(candle) < body(candle)
-    );
+    if (candles.length <= offset) {
+      return false;
+    }
+    if (!up(trend)) {
+      return false;
+    }
+    if (hair(candle) >= body(candle)) {
+      return false;
+    }
+    return tail(candle) > body(candle) * ratio;
   }
 
   export interface Options {

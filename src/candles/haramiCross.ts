@@ -30,17 +30,23 @@ export namespace HaramiCross {
     offset: number = 0,
     options: Options = defaults
   ) {
-    if (
-      LongDay.test(candles, trend, offset, options.longDay) &&
-      Doji.test(candles, trend, offset + 1, options.doji)
-    ) {
-      const long = candles[offset];
-      const short = candles[offset + 1];
-      const bull = up(trend) && bullish(long);
-      const bear = down(trend) && bearish(long);
-      return (bull || bear) && engulfed(short, long);
+    const long = candles[offset];
+    const short = candles[offset + 1];
+    if (candles.length <= offset + 1) {
+      return false;
     }
-    return false;
+    if (!LongDay.test(candles, trend, offset, options.longDay)) {
+      return false;
+    }
+    if (!Doji.test(candles, trend, offset + 1, options.doji)) {
+      return false;
+    }
+    if (!engulfed(short, long)) {
+      return false;
+    }
+    const bull = up(trend) && bullish(long);
+    const bear = down(trend) && bearish(long);
+    return bull || bear;
   }
 
   function engulfed(candleA: Candle, candleB: Candle): boolean {

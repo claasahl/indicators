@@ -32,27 +32,24 @@ export namespace DojiStar {
     offset: number = 0,
     options: Options = defaults
   ): boolean {
-    if (
-      LongDay.test(candles, trend, offset, options.longDay) &&
-      Doji.test(candles, trend, offset + 1, options.doji)
-    ) {
-      const long = candles[offset];
-      const doji = candles[offset + 1];
-      const range =
-        (long.high - long.low) / (doji.high - doji.low) >= options.ratio;
-      if (up(trend)) {
-        return (
-          range &&
-          bullish(long) &&
-          Math.abs(lower(doji) - long.close) >= options.gap
-        );
-      } else if (down(trend)) {
-        return (
-          range &&
-          bearish(long) &&
-          Math.abs(long.close - upper(doji)) >= options.gap
-        );
-      }
+    const long = candles[offset];
+    const doji = candles[offset + 1];
+    if (candles.length <= offset + 1) {
+      return false;
+    }
+    if (!LongDay.test(candles, trend, offset, options.longDay)) {
+      return false;
+    }
+    if (!Doji.test(candles, trend, offset + 1, options.doji)) {
+      return false;
+    }
+    if ((long.high - long.low) / (doji.high - doji.low) < options.ratio) {
+      return false;
+    }
+    if (up(trend) && bullish(long)) {
+      return Math.abs(lower(doji) - long.close) >= options.gap;
+    } else if (down(trend) && bearish(long)) {
+      return Math.abs(long.close - upper(doji)) >= options.gap;
     }
     return false;
   }

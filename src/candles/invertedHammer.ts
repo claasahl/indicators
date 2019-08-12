@@ -30,11 +30,19 @@ export namespace InvertedHammer {
   ): boolean {
     const long = candles[offset];
     const star = candles[offset + 1];
-    const gap =
-      bearish(long) && Math.abs(long.close - upper(star)) >= options.gap;
+    if (candles.length <= offset + 1) {
+      return false;
+    }
+    if (!down(trend)) {
+      return false;
+    }
+    if (!bearish(long)) {
+      return false;
+    }
+    if (Math.abs(long.close - upper(star)) < options.gap) {
+      return false;
+    }
     return (
-      down(trend) &&
-      gap &&
       hair(star) / body(star) >= options.ratio &&
       tail(star) <= options.precision
     );
