@@ -15,7 +15,7 @@ export namespace HangingMan {
    *
    * ### Remarks
    * - Source: p.27
-   * - Opposite Pattern: Hammer (see [[isHammer]])
+   * - Opposite Pattern: [[Hammer]]
    *
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured

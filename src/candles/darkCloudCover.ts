@@ -14,7 +14,7 @@ export namespace DarkCloudCover {
    *
    * ### Remarks
    * - Source: p.58
-   * - Opposite Pattern: Piercing Line (see [[isPiercingLine]])
+   * - Opposite Pattern: [[PiercingLine]]
    *
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured

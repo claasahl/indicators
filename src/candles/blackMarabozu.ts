@@ -16,7 +16,7 @@ export namespace BlackMarabozu {
    *
    * ### Remarks
    * - Source: p.14
-   * - Opposite Pattern: White Marabozu (see [[isWhiteMarabozu]])
+   * - Opposite Pattern: [[WhiteMarabozu]]
    *
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured

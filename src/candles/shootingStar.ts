@@ -15,7 +15,7 @@ export namespace ShootingStar {
    *
    * ### Remarks
    * - Source: p.49
-   * - Opposite Pattern: Inverted Hammer (see [[isInvertedHammer]])
+   * - Opposite Pattern: [[InvertedHammer]]
    *
    * @param candles candles to be tested against this pattern
    * @param trend trend in which candle occured

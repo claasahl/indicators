@@ -14,7 +14,7 @@ export namespace ShortDay {
    *
    * ### Remarks
    * - Source: p.13
-   * - Opposite Pattern: Long Day (see [[isLongDay]])
+   * - Opposite Pattern: [[LongDay]]
    *
    * @param candles candles to be tested against this pattern
    * @param _trend trend in which candle occured
