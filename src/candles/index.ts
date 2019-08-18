@@ -1,5 +1,6 @@
 import { Trend } from "../trend";
 import { Candle } from "../candle";
+import { AbandonedBaby } from "./abandonedBaby";
 import { BeltHold } from "./beltHold";
 import { BlackCrow } from "./blackCrow";
 import { BlackMarabozu } from "./blackMarabozu";
@@ -35,6 +36,7 @@ import { ShortDay } from "./shortDay";
 import { WhiteMarabozu } from "./whiteMarabozu";
 import { WhiteSoldier } from "./whiteSoldier";
 
+export * from "./abandonedBaby";
 export * from "./beltHold";
 export * from "./blackCrow";
 export * from "./blackMarabozu";
@@ -77,6 +79,9 @@ export function test(
   offset: number = 0
 ): string[] {
   const patterns: string[] = [];
+  patterns.push(
+    AbandonedBaby.test(candles, trend, offset) ? "abandonedBaby" : ""
+  );
   patterns.push(BeltHold.test(candles, trend, offset) ? "beltHold" : "");
   patterns.push(BlackCrow.test(candles, trend, offset) ? "blackCrow" : "");
   patterns.push(
