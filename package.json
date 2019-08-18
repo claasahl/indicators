@@ -1,0 +1,40 @@
+{
+  "name": "indicators",
+  "version": "0.1.2",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "jest",
+    "precommit": "pretty-quick --staged",
+    "prepare": "npm run build",
+    "build": "tsc && npm run samples && npm run docs",
+    "docs": "typedoc --media ./assets/ --excludeNotExported && echo '' > ./docs/.nojekyll",
+    "samples": "ts-node src/samples.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "candlestick patterns",
+    "technical indicators"
+  ],
+  "author": {
+    "name": "Claas Ahlrichs",
+    "email": "claasahl@gmail.com",
+    "url": "https://github.com/claasahl"
+  },
+  "repository": "github:claasahl/indicators",
+  "bugs": {
+    "url": "https://github.com/claasahl/indicators/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/d3-scale": "^2.1.1",
+    "canvas": "^2.5.0",
+    "create-typescript-project-dependencies": "^10.0.4",
+    "d3-scale": "^3.0.1",
+    "jest": "^24.8.0",
+    "typedoc": "^0.15.0"
+  },
+  "dependencies": {}
+}

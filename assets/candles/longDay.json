@@ -1,0 +1,42 @@
+{
+  "trend": "up",
+  "offset": 5,
+  "candles": [
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 50
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 50
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 50
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 50
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 50
+    },
+    {
+      "open": 10,
+      "high": 80,
+      "low": 10,
+      "close": 70
+    }
+  ]
+}

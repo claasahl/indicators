@@ -1,0 +1,54 @@
+{
+  "trend": "up",
+  "offset": 5,
+  "candles": [
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 30
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 30
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 30
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 30
+    },
+    {
+      "open": 20,
+      "high": 60,
+      "low": 10,
+      "close": 30
+    },
+    {
+      "open": 35,
+      "high": 80,
+      "low": 10,
+      "close": 60
+    },
+    {
+      "open": 83,
+      "high": 85,
+      "low": 75,
+      "close": 77
+    },
+    {
+      "open": 70,
+      "high": 75,
+      "low": 25,
+      "close": 30
+    }
+  ]
+}
