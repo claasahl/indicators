@@ -33,6 +33,7 @@ import { OpeningMarabozu } from "./openingMarabozu";
 import { PiercingLine } from "./piercingLine";
 import { ShootingStar } from "./shootingStar";
 import { ShortDay } from "./shortDay";
+import { TriStar } from "./triStar";
 import { WhiteMarabozu } from "./whiteMarabozu";
 import { WhiteSoldier } from "./whiteSoldier";
 
@@ -69,6 +70,7 @@ export * from "./openingMarabozu";
 export * from "./piercingLine";
 export * from "./shootingStar";
 export * from "./shortDay";
+export * from "./triStar";
 export * from "./whiteMarabozu";
 export * from "./whiteSoldier";
 
@@ -146,6 +148,7 @@ export function test(
     ShootingStar.test(candles, trend, offset) ? "shootingStar" : ""
   );
   patterns.push(ShortDay.test(candles, trend, offset) ? "shortDay" : "");
+  patterns.push(TriStar.test(candles, trend, offset) ? "triStar" : "");
   patterns.push(
     WhiteMarabozu.test(candles, trend, offset) ? "whiteMarabozu" : ""
   );
