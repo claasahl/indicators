@@ -11,6 +11,7 @@ import { DojiStar } from "./dojiStar";
 import { DragonflyDoji } from "./dragonflyDoji";
 import { Engulfing } from "./engulfing";
 import { EveningStar } from "./eveningStar";
+import { EveningDojiStar } from "./eveningDojiStar";
 import { GravestoneDoji } from "./gravestoneDoji";
 import { Hammer } from "./hammer";
 import { HangingMan } from "./hangingMan";
@@ -26,6 +27,7 @@ import { MatchingHigh } from "./matchingHigh";
 import { MatchingLow } from "./matchingLow";
 import { MeetingLines } from "./meetingLines";
 import { MorningStar } from "./morningStar";
+import { MorningDojiStar } from "./morningDojiStar";
 import { OpeningMarabozu } from "./openingMarabozu";
 import { PiercingLine } from "./piercingLine";
 import { ShootingStar } from "./shootingStar";
@@ -44,6 +46,7 @@ export * from "./dojiStar";
 export * from "./dragonflyDoji";
 export * from "./engulfing";
 export * from "./eveningStar";
+export * from "./eveningDojiStar";
 export * from "./gravestoneDoji";
 export * from "./hammer";
 export * from "./hangingMan";
@@ -59,6 +62,7 @@ export * from "./matchingHigh";
 export * from "./matchingLow";
 export * from "./meetingLines";
 export * from "./morningStar";
+export * from "./morningDojiStar";
 export * from "./openingMarabozu";
 export * from "./piercingLine";
 export * from "./shootingStar";
@@ -95,6 +99,9 @@ export function test(
   patterns.push(Engulfing.test(candles, trend, offset) ? "engulfing" : "");
   patterns.push(EveningStar.test(candles, trend, offset) ? "eveningStar" : "");
   patterns.push(
+    EveningDojiStar.test(candles, trend, offset) ? "eveningDojiStar" : ""
+  );
+  patterns.push(
     GravestoneDoji.test(candles, trend, offset) ? "gravestoneDoji" : ""
   );
   patterns.push(Hammer.test(candles, trend, offset) ? "hammer" : "");
@@ -121,6 +128,9 @@ export function test(
     MeetingLines.test(candles, trend, offset) ? "meetingLines" : ""
   );
   patterns.push(MorningStar.test(candles, trend, offset) ? "morningStar" : "");
+  patterns.push(
+    MorningDojiStar.test(candles, trend, offset) ? "morningDojiStar" : ""
+  );
   patterns.push(
     OpeningMarabozu.test(candles, trend, offset) ? "openingMarabozu" : ""
   );
