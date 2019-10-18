@@ -20,6 +20,10 @@ export function body(candle: Candle): number {
   return Math.abs(candle.open - candle.close);
 }
 
+export function range(candle: Candle): number {
+  return candle.high - candle.low;
+}
+
 export function hair(candle: Candle): number {
   return candle.high - upper(candle);
 }
